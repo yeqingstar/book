@@ -13,9 +13,15 @@
    li {
        list-style: none;
    }
-
+   .top{
+       position: -webkit-sticky;
+       position: sticky;
+       top: 0px;
+       z-index: 999;
+       background-color:#dfe98e;
+   }
    .dives {
-
+    
        margin: 10px;
    }
 
@@ -215,4 +221,66 @@
 
    .tu .active {
        color: red;
+   }
+
+   .first nav li {
+       text-decoration: none;
+       padding: 15px;
+   }
+
+   .first .big-left div {
+       white-space: nowrap;
+       text-overflow: ellipsis;
+       overflow: hidden;
+   }
+
+   .first li:hover {
+       background-color: lightblue;
+   }
+
+   .first .tab .moel {
+       background-color: #00000080;
+       text-align: center;
+       margin-top: -10%;
+       color: #fff;
+
+   }
+
+   .two {
+       margin-top: 5%;
+   }
+
+   .two .row .two-left {
+       margin-left: 15px;
+       margin-bottom: 2px;
+       border-left: 1px solid #d9ae6a;
+   }
+
+   .two .row span {
+       color: #7f818e;
+   }
+
+   .two .row .two-text {
+
+       width: 100%;
+       border-top: 1px solid black;
+       border-bottom: 1px solid black;
+   }
+
+   .two .two-text {
+       display: -webkit-box;
+       text-indent: 3rem;
+       -webkit-box-orient: vertical;
+       -webkit-line-clamp: 3;
+       overflow: hidden;
+   }
+
+   .two .two-text2 {
+       white-space: nowrap;
+       text-overflow: ellipsis;
+       overflow: hidden;
+   }
+
+   .two .first-img {
+       text-align: center;
    }
