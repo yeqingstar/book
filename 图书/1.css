@@ -13,15 +13,17 @@
    li {
        list-style: none;
    }
-   .top{
+
+   .top {
        position: -webkit-sticky;
        position: sticky;
        top: 0px;
        z-index: 999;
-       background-color:#dfe98e;
+       background-color: #dfe98e;
    }
+
    .dives {
-    
+
        margin: 10px;
    }
 
@@ -223,9 +225,12 @@
        color: red;
    }
 
-   .first nav li {
-       text-decoration: none;
+   .first ul li {
        padding: 15px;
+   }
+
+   .first ul li a {
+       text-decoration: none;
    }
 
    .first .big-left div {
@@ -239,11 +244,15 @@
    }
 
    .first .tab .moel {
-       background-color: #00000080;
-       text-align: center;
-       margin-top: -10%;
-       color: #fff;
 
+       text-align: center;
+       margin-top: -11.5%;
+   }
+
+   .first .tab .moel p {
+       background-color: #00000080;
+       line-height: 40px;
+       color: #fff;
    }
 
    .two {

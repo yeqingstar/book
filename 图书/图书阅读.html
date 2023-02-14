@@ -4,13 +4,28 @@
 <head>
     <meta charset="utf-8">
     <title>Bootstrap 实例 - 缩略图13</title>
-
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./1.js"></script>
     <link rel="stylesheet" href="./1.css">
 </head>
+<style>
+    a {
+        text-decoration: none;
+    }
+
+    .mead ul li {
+        width: 100%;
+        border: 1px solid red;
+        text-align: center;
+
+    }
+
+    .mead ul li:hover {
+        color: aqua;
+    }
+</style>
 
 <body>
     <div class="container-fluid top">
@@ -37,24 +52,77 @@
             </div>
             <div class="col-xl-3 col-6 right">
                 <div class="row">
-                    <div class="col-xl-2 col-2 right-img">
+                    <div class="col-xl-2 col-8 right-img justify-content-end">
                         <img src="" data-url="https://randomuser.me/api/portraits/women/63.jpg"
                             class="user-img img-fluid">
                     </div>
-                    <div class="col-xl-10 col-10 right-text">
+                    <div class="col-xl-10 col-2 right-text">
                         <span>Menu</span>
                     </div>
                 </div>
             </div>
         </div>
+
+    </div>
+    <div class="container">
+        <div id=" box">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">首页</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="./pepoleshare.html">实景案例</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
+                                奥华产品
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">大咖设计</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">热装楼盘</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">金钻工程</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">澳华优势</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">关于澳华</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="maid" style="margin-top: 0;"><a class="nav-link text-dark"
+                                    href="#">快速报价</a></button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
     </div>
     <div class="container-fluid">
         <div class="row tu">
             <div class="col-sm-4 col-md-4 back">
                 <div class="rwo box d-flex">
                     <div class="col-md-5 col-sm-5 poto ">
-                        <img src=""
-                            data-url="https://images-na.ssl-images-amazon.com/images/I/81UWB7oUZ0L.jpg"
+                        <img src="" data-url="https://images-na.ssl-images-amazon.com/images/I/81UWB7oUZ0L.jpg"
                             class="book-photo img-fluid">
                     </div>
                     <div class="col-md-7 col-sm-7 box-right">
@@ -144,8 +212,7 @@
             <div class="col-sm-4 col-md-4 back4">
                 <div class="rwo box3 d-flex">
                     <div class="col-md-5 col-sm-5 poto ">
-                        <img src=""
-                            data-url="https://images-na.ssl-images-amazon.com/images/I/81UWB7oUZ0L.jpg"
+                        <img src="" data-url="https://images-na.ssl-images-amazon.com/images/I/81UWB7oUZ0L.jpg"
                             class="book-photo img-fluid">
                     </div>
                     <div class="col-md-7 col-sm-7 box-right">
@@ -206,146 +273,202 @@
 
     </div>
     <div class="container">
-        <hr>
-        <div class="row big">
-            <div class="col-md-12 col-sm-12 first ">
-                <nav id="nav">
-                    <ul class="d-flex">
-                        <li class="act">动物百科</li>
-                        <li>军事百科</li>
-                        <li>经济百科</li>
-                        <li>政治百科</li>
-                    </ul>
-                </nav>
-                <div class="tab">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-2">
-                            <img src="" data-url="./kan1.jpg" class="book-photo img-fluid">
-                            <div class="row">
-                                <div class="col-md-10 offset-md-1 moel">
-                                    <span>说的话卡号是会计很快就会</span>
+        <div class="col-xl-12 first">
+            <ul id="myTab" class="nav nav-pills" role="tablist">
+                <li class="active"><a href="#rule" role="tab" data-toggle="pill">动物百科</a></li>
+                <li><a href="#forum" role="tab" data-toggle="pill">军事百科</a>
+                </li>
+                <li><a href="#security" role="tab" data-toggle="pill">经济百科</a></li>
+                <li><a href="#four" role="tab" data-toggle="pill">政治百科</a></li>
+                <li><a href="#five" role="tab" data-toggle="pill">更多</a></li>
+            </ul>
+
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade show active" id="rule">
+                    <div class="tab">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-2">
+                                <img src="" data-url="./kan1.jpg" class="book-photo img-fluid">
+                                <div class="row">
+                                    <div class="col-md-10 offset-md-1 moel">
+                                        <p>说的话卡号是会计很快就会</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 big-left">
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 big-left">
-                            <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
-                                | 户型解析|武汉空医家园业主必看！
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="forum">
+                    <div class="tab">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-2">
+                                <img src="" data-url="./kan1.jpg" class="book-photo img-fluid">
+                                <div class="row">
+                                    <div class="col-md-10 offset-md-1 moel">
+                                        <p>说的话卡号是会计很快就会</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
-                                | 户型解析|武汉空医家园业主必看！
-                            </div>
-                            <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
-                                | 户型解析|武汉空医家园业主必看！
-                            </div>
-                            <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
-                                | 户型解析|武汉空医家园业主必看！
-                            </div>
-                            <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
-                                | 户型解析|武汉空医家园业主必看！
-                            </div>
-                            <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
-                                | 户型解析|武汉空医家园业主必看！
-                            </div>
-                            <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
-                                | 户型解析|武汉空医家园业主必看！
-                            </div>
-                            <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
-                                | 户型解析|武汉空医家园业主必看！
+                            <div class="col-md-6 col-sm-6 big-left">
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab" style="background-color: tomato">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <img src="" data-url="https://images-na.ssl-images-amazon.com/images/I/81UWB7oUZ0L.jpg"
-                                class="book-photo img-fluid">
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="col-md-12 col-sm-12">
-                                | 户型解析|武汉空医家园业主必看！
-
+                <div class="tab-pane fade " id="security">
+                    <div class="tab">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <img src="" data-url="./kan1.jpg" class="book-photo img-fluid">
+                                <div class="row">
+                                    <div class="col-md-10 offset-md-1 moel">
+                                        <p>说的话卡号是会计很快就会</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-12 col-sm-12">
-                                | 户型解析|武汉空医家园业主必看！
+                            <div class="col-md-6 col-sm-6 big-left">
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
 
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                                | 户型解析|武汉空医家园业主必看！
-
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                                | 户型解析|武汉空医家园业主必看！
-
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                                | 户型解析|武汉空医家园业主必看！
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab" style="background-color: tomato">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <img src="" data-url="https://images-na.ssl-images-amazon.com/images/I/81UWB7oUZ0L.jpg"
-                                class="book-photo img-fluid">
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="col-md-12 col-sm-12">
-                                | 户型解析|武汉空医家园业主必看！
-
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                                | 户型解析|武汉空医家园业主必看！
-
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                                | 户型解析|武汉空医家园业主必看！
-
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                                | 户型解析|武汉空医家园业主必看！
-
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                                | 户型解析|武汉空医家园业主必看！
-
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab" style="background-color: tomato">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <img src="" data-url="https://images-na.ssl-images-amazon.com/images/I/81UWB7oUZ0L.jpg"
-                                class="book-photo img-fluid">
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="col-md-12 col-sm-12">
-                                | 户型解析|武汉空医家园业主必看！
-
+                <div class="tab-pane fade " id="four">
+                    <div class="tab">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-2">
+                                <img src="" data-url="./kan1.jpg" class="book-photo img-fluid">
+                                <div class="row">
+                                    <div class="col-md-10 offset-md-1 moel">
+                                        <p>说的话卡号是会计很快就会</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-12 col-sm-12">
-                                | 户型解析|武汉空医家园业主必看！
+                            <div class="col-md-6 col-sm-6 big-left">
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
 
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                                | 户型解析|武汉空医家园业主必看！
-
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                                | 户型解析|武汉空医家园业主必看！
-
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                                | 户型解析|武汉空医家园业主必看！
-
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12" title="| 户型解析|武汉空医家园业主必看！">
+                                    <p> | 户型解析|武汉空医家园业主必看！</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="tab-pane fade " id="five">
+                    跟多
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="container">
+        <hr>
+        <div class="row big">
             <div class="col-md-12 two ">
                 <div class="row">
                     <div class="col-md-6 col-sm-6 two-left">图书新闻</div>
@@ -371,6 +494,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>

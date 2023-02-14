@@ -70,25 +70,25 @@
          })
      }
      a()
-     var a = document.getElementById('nav')
-             var oNav = document.getElementsByTagName('li')
+    //  var a = document.getElementById('nav')
+    //          var oNav = document.getElementsByTagName('li')
 
-             var c = document.getElementById('container')
-             var oDiv = document.getElementsByClassName('tab')
-             for (let i = 0; i < oNav.length; i++) {
-                 oNav[i].index = i
-                 oNav[i].onclick = function () {
-                     for (let i = 0; i < oNav.length; i++) {
-                         oNav[i].className = ""
-                         oDiv[i].style.display = "none"
-                     }
-                     this.className = 'act'
-                     oDiv[this.index].style.display = "block"
-                 }
-                 for (let m = 1; m < oNav.length; m++) {
-                     oNav[m].className = ""
-                     oDiv[m].style.display = "none"
-                 }
+    //          var c = document.getElementById('container')
+    //          var oDiv = document.getElementsByClassName('tab')
+    //          for (let i = 0; i < oNav.length; i++) {
+    //              oNav[i].index = i
+    //              oNav[i].onclick = function () {
+    //                  for (let i = 0; i < oNav.length; i++) {
+    //                      oNav[i].className = ""
+    //                      oDiv[i].style.display = "none"
+    //                  }
+    //                  this.className = 'act'
+    //                  oDiv[this.index].style.display = "block"
+    //              }
+    //              for (let m = 1; m < oNav.length; m++) {
+    //                  oNav[m].className = ""
+    //                  oDiv[m].style.display = "none"
+    //              }
 
-             }
+    //          }
  }
