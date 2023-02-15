@@ -13,7 +13,6 @@
    li {
        list-style: none;
    }
-
    .top {
        position: -webkit-sticky;
        position: sticky;
@@ -233,7 +232,7 @@
        text-decoration: none;
    }
 
-   .first .big-left div {
+   .first .big-left div,h6, .fenlei .bookfen p{
        white-space: nowrap;
        text-overflow: ellipsis;
        overflow: hidden;
@@ -257,11 +256,10 @@
 
    .two {
        margin-top: 5%;
+       margin-bottom: 5%;
    }
 
    .two .row .two-left {
-       margin-left: 15px;
-       margin-bottom: 2px;
        border-left: 1px solid #d9ae6a;
    }
 
@@ -270,10 +268,10 @@
    }
 
    .two .row .two-text {
-
        width: 100%;
        border-top: 1px solid black;
        border-bottom: 1px solid black;
+       font-size: 16px;
    }
 
    .two .two-text {
@@ -283,13 +281,6 @@
        -webkit-line-clamp: 3;
        overflow: hidden;
    }
-
-   .two .two-text2 {
-       white-space: nowrap;
-       text-overflow: ellipsis;
-       overflow: hidden;
-   }
-
    .two .first-img {
        text-align: center;
    }
