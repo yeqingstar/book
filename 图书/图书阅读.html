@@ -471,6 +471,11 @@
         </div>
     </div>
     <style>
+        /* 分类阅读组件 */
+        .fenlei {
+            border: 1px solid red;
+        }
+
         .fenlei .tab-content {
             margin: 5px;
             border: 1px solid rgb(168, 165, 165);
@@ -478,10 +483,6 @@
 
         .fenlei .tab-content .tab-pane {
             margin: 15px;
-        }
-
-        .fenlei ul li:first-child {
-            font-size: 24px;
         }
 
         .fenlei ul li {
@@ -493,6 +494,7 @@
             color: #8e8d8c;
             font-size: 14px;
             text-decoration: none;
+            /* margin: 3px; */
         }
 
         .fenlei ul li a:hover {
@@ -531,123 +533,189 @@
     </style>
     <div class="container">
         <div class="col-xl-12 fenlei">
-            <ul id="myTab" class="nav nav-pills" role="tablist">
-                <li>分类阅读</li>
-                <li class="active"><a href="#xiao" role="tab" data-toggle="pill">小说作品</a></li>
-                <li>|</li>
-                <li><a href="#peo" role="tab" data-toggle="pill">人文社科</a></li>
-                <li>|</li>
-                <li><a href="#sec" role="tab" data-toggle="pill">成功励志</a></li>
-                <li>|</li>
-                <li><a href="#money" role="tab" data-toggle="pill">经济管理</a></li>
-                <li>|</li>
-                <li><a href="#com" role="tab" data-toggle="pill">品质生活</a></li>
-            </ul>
-            <div id="myTabContent" class="tab-content col-md-8 col-sm-8">
-                <div class="tab-pane fade show active" id="xiao">
-                    <div class="row bookfen">
-                        <div class="col-md-3 col-sm-3">
-                            <a title="在轮下">
-                                <img src=""
-                                    data-url="https://easyreadfs.nosdn.127.net/DswrhCtZ9bPfavlqWlVh-Q==/8796093024978789377"
-                                    class="img-fluid" alt="在轮下">
-                            </a>
-                            <h6 title="在轮下">在轮下</h6>
-                            <p>【德】赫尔曼·黑塞,</p>
-                        </div>
-                        <div class="col-md-3 col-sm-3">
-                            <a title="双城记">
-                                <img src=""
-                                    data-url="https://easyreadfs.nosdn.127.net/2DgzpaTRIg_dlbiyJ1qIcw==/8796093024910854011"
-                                    class="img-fluid" alt="痴人之爱">
-                            </a>
-                            <h6 title="痴人之爱">痴人之爱</h6>
-                            <p>【日】谷崎润一郎,三</p>
-                        </div>
-                        <div class="col-md-3 col-sm-3">
-                            <a title="双城记">
-                                <img src=""
-                                    data-url="https://easyreadfs.nosdn.127.net/mh2V2PQtofzwJUxZZf9qIA==/8796093024978760801"
-                                    class="img-fluid" alt="一只黑猩猩的宇宙史">
-                            </a>
-                            <h6 title="一只黑猩猩的宇宙史">一只黑猩猩的宇宙史</h6>
-                            <p>施英巍</p>
-                        </div>
-                        <div class="col-md-3 col-sm-3">
-                            <a title="双城记">
-                                <img src=""
-                                    data-url="https://easyreadfs.nosdn.127.net/dmRx3bTydNJzjLFchGKknw==/8796093024978764631"
-                                    class="img-fluid" alt="一个陌生女人的来信：茨威格中短篇小说选">
-                            </a>
-                            <h6 title="一个陌生女人的来信：茨威格中">一个陌生女人的来信：茨威格中</h6>
-                            <p>【奥地利】斯蒂芬·茨</p>
-                        </div>
-                        <div class="col-md-3 col-sm-3">
-                            <a title="双城记">
-                                <img src=""
-                                    data-url="https://easyreadfs.nosdn.127.net/-R2MmzmI9g7J_nxnQ5XS8w==/8796093024975659948"
-                                    class="img-fluid" alt="天使怒焱">
-                            </a>
-                            <h6 title="尼伯龙根">尼伯龙根</h6>
-                            <p>奥尔加·克留奇科娃</p>
-                        </div>
-                        <div class="col-md-3 col-sm-3">
-                            <a title="双城记">
-                                <img src=""
-                                    data-url="https://easyreadfs.nosdn.127.net/i9t7m5uNzRJU-taalCZS1Q==/8796093024975674016"
-                                    class="img-fluid" alt="夏日乌托邦">
-                            </a>
-                            <h6 title="天使怒焱">天使怒焱</h6>
-                            <p>迪特马尔·亚瑟·韦尔</p>
-                        </div>
-                        <div class="col-md-3 col-sm-3">
-                            <a title="双城记">
-                                <img src=""
-                                    data-url="https://easyreadfs.nosdn.127.net/8tWuB9wzwacNJP6W2gykzQ==/8796093024975463990"
-                                    class="img-fluid" alt="堕落英雄">
-                            </a>
-                            <h6 title="夏日乌托邦">夏日乌托邦</h6>
-                            <p>轩子</p>
-                        </div>
-                        <div class="col-md-3 col-sm-3">
-                            <a title="双城记">
-                                <img src=""
-                                    data-url="https://easyreadfs.nosdn.127.net/A9NtB0L4Dj2JQFp0wC3skg==/8796093024975479189"
-                                    class="img-fluid" alt="尼伯龙根">
-                            </a>
-                            <h6 title="堕落英雄">堕落英雄</h6>
-                            <p>【美】罗海妮·埃克哈</p>
-                        </div>
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <ul id="myTab" class="nav nav-pills" role="tablist">
+                        <h4>分类阅读</h4>
+                        <li class="active"><a href="#xiao" role="tab" data-toggle="pill">小说作品</a></li>
+                        <li>|&nbsp;<a href="#peo" role="tab" data-toggle="pill">人文社科</a></li>
+                        <li>|&nbsp;<a href="#sec" role="tab" data-toggle="pill">成功励志</a></li>
+                        <li>|&nbsp;<a href="#money" role="tab" data-toggle="pill">经济管理</a></li>
+                        <li>|&nbsp;<a href="#com" role="tab" data-toggle="pill">品质生活</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3  col-sm-3" id="boxname">
+                    <div class="col-md-12" id="boxname1">
+                        <h4>小说作品</h4>
+                    </div>
+                    <div class="col-md-12" id="boxname2">
+                        <h4>人文社科</h4>
+                    </div>
+                    <div class="col-md-12" id="boxname3">
+                        <h4>成功励志</h4>
+                    </div>
+                    <div class="col-md-12" id="boxname4">
+                        <h4>经济管理</h4>
+                    </div>
+                    <div class="col-md-12" id="boxname5">
+                        <h4>品质生活</h4>
+                    </div>
 
+                </div>
+            </div>
+            <div class="row justify-content-sm-around">
+                <div id="myTabContent" class="tab-content col-md-8 col-sm-8 ">
+                    <div class="tab-pane fade show active" id="xiao">
+                        <div class="row bookfen">
+                            <div class="col-md-3 col-sm-3">
+                                <a title="在轮下">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/DswrhCtZ9bPfavlqWlVh-Q==/8796093024978789377"
+                                        class="img-fluid" alt="在轮下">
+                                </a>
+                                <h6 title="在轮下">在轮下</h6>
+                                <p>【德】赫尔曼·黑塞,</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/2DgzpaTRIg_dlbiyJ1qIcw==/8796093024910854011"
+                                        class="img-fluid" alt="痴人之爱">
+                                </a>
+                                <h6 title="痴人之爱">痴人之爱</h6>
+                                <p>【日】谷崎润一郎,三</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/mh2V2PQtofzwJUxZZf9qIA==/8796093024978760801"
+                                        class="img-fluid" alt="一只黑猩猩的宇宙史">
+                                </a>
+                                <h6 title="一只黑猩猩的宇宙史">一只黑猩猩的宇宙史</h6>
+                                <p>施英巍</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/dmRx3bTydNJzjLFchGKknw==/8796093024978764631"
+                                        class="img-fluid" alt="一个陌生女人的来信：茨威格中短篇小说选">
+                                </a>
+                                <h6 title="一个陌生女人的来信：茨威格中">一个陌生女人的来信：茨威格中</h6>
+                                <p>【奥地利】斯蒂芬·茨</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/-R2MmzmI9g7J_nxnQ5XS8w==/8796093024975659948"
+                                        class="img-fluid" alt="天使怒焱">
+                                </a>
+                                <h6 title="尼伯龙根">尼伯龙根</h6>
+                                <p>奥尔加·克留奇科娃</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/i9t7m5uNzRJU-taalCZS1Q==/8796093024975674016"
+                                        class="img-fluid" alt="夏日乌托邦">
+                                </a>
+                                <h6 title="天使怒焱">天使怒焱</h6>
+                                <p>迪特马尔·亚瑟·韦尔</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/8tWuB9wzwacNJP6W2gykzQ==/8796093024975463990"
+                                        class="img-fluid" alt="堕落英雄">
+                                </a>
+                                <h6 title="夏日乌托邦">夏日乌托邦</h6>
+                                <p>轩子</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/A9NtB0L4Dj2JQFp0wC3skg==/8796093024975479189"
+                                        class="img-fluid" alt="尼伯龙根">
+                                </a>
+                                <h6 title="堕落英雄">堕落英雄</h6>
+                                <p>【美】罗海妮·埃克哈</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="peo">
+                        <div class="row">
+                            <div class="col-md-3">1</div>
+                            <div class="col-md-3">1</div>
+                            <div class="col-md-3">1</div>
+                            <div class="col-md-3">1</div>
+                            <div class="col-md-3">1</div>
+                            <div class="col-md-3">1</div>
+                            <div class="col-md-3">1</div>
+                            <div class="col-md-3">1</div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="sec">
+                        3
+                    </div>
+                    <div class="tab-pane fade " id="money">
+                        4
+                    </div>
+                    <div class="tab-pane fade " id="com">
+                        5
                     </div>
                 </div>
-                <div class="tab-pane fade " id="peo">
-                    <div class="row">
-                        <div class="col-md-3">1</div>
-                        <div class="col-md-3">1</div>
-                        <div class="col-md-3">1</div>
-                        <div class="col-md-3">1</div>
-                        <div class="col-md-3">1</div>
-                        <div class="col-md-3">1</div>
-                        <div class="col-md-3">1</div>
-                        <div class="col-md-3">1</div>
-                    </div>
-                </div>
-                <div class="tab-pane fade " id="sec">
-                    3
-                </div>
-                <div class="tab-pane fade " id="money">
-                    4
-                </div>
-                <div class="tab-pane fade " id="com">
+                <div class="col-md-3 col-sm-2 tab-content leftact" id="xuan">
+                    <div class="col-md-12" id="xuan1">
 
-                    5
+                    </div>
+                    <div class="col-md-12" id="xuan2">
+                        2
+                    </div>
+                    <div class="col-md-12" id="xuan3">
+                        3
+                    </div>
+                    <div class="col-md-12" id="xuan4">
+                        4
+                    </div>
+                    <div class="col-md-12" id="xuan5">
+                        5
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <style>
+        .floot {
+            width: 3%;
+            position: fixed;
+            top: 500px;
+            right: 50px;
+        }
 
+        .floot ul li {
+            border: 1px solid red;
+            width: 100%;
+            height: 50px;
+            margin-top: 20px;
+        }
+    </style>
+    <div class="floot" id="floot">
+        <ul>
+            <li>
+                1
+            </li>
+            <li>
+                2
+            </li>
+            <li onclick="backtop()">
+                顶部
+            </li>
+        </ul>
+    </div>
 </body>
 
 </html>
+<script>
+  
+</script>

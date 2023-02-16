@@ -5,10 +5,11 @@
          let year = date.getFullYear();
          let mou = date.getMonth();
          let da = date.getDate();
-         return res = year + '-' + mou + '-' + da 
+         return res = year + '-' + mou + '-' + da
      }
      let tiner = document.getElementById('date')
      tiner.innerHTML = data()
+
      function count() {
          let str = []
          let arr = ['book', 'book1', 'book2', 'book3', 'book4', 'book5', 'book6', 'book7', 'book8', 'book9',
@@ -70,25 +71,53 @@
          })
      }
      a()
-    //  var a = document.getElementById('nav')
-    //          var oNav = document.getElementsByTagName('li')
+     // 置顶
+     var div = document.querySelector('.backtop')
+     var divtop = 500
+     var times
+     window.onscroll = function () {
+         var t = document.documentElement.scrollTop
+         div.style.top = divtop + t + 'px'
+     }
 
-    //          var c = document.getElementById('container')
-    //          var oDiv = document.getElementsByClassName('tab')
-    //          for (let i = 0; i < oNav.length; i++) {
-    //              oNav[i].index = i
-    //              oNav[i].onclick = function () {
-    //                  for (let i = 0; i < oNav.length; i++) {
-    //                      oNav[i].className = ""
-    //                      oDiv[i].style.display = "none"
-    //                  }
-    //                  this.className = 'act'
-    //                  oDiv[this.index].style.display = "block"
-    //              }
-    //              for (let m = 1; m < oNav.length; m++) {
-    //                  oNav[m].className = ""
-    //                  oDiv[m].style.display = "none"
-    //              }
+     function backtop() {
+         clearInterval(times)
+         times = setInterval(function () {
+             var top = document.documentElement.scrollTop
+             if (top <= 0) {
+                 clearInterval(times)
+             } else {
+                 document.documentElement.scrollTop = top - 550;
 
-    //          }
+             }
+         }, 100)
+     }
+
+     $(function () {
+         //  右边选项卡上的文字
+         $('#boxname div[id!=boxname1]').hide()
+         $('#myTab li').click(function () {
+             $('#boxname div').hide()
+             var currentIndex = $(this).index();
+             $('#boxname div').eq(currentIndex - 1).show()
+         })
+         // 右边选项卡
+         $('#xuan div[id!=xuan1]').hide()
+         $('#myTab li').click(function () {
+             $('#xuan div').hide()
+             var currentIndex = $(this).index();
+             $('#xuan div').eq(currentIndex - 1).show()
+         })
+         // 监听置顶的位置
+         $(window).scroll(function () {
+             const h = $(window).scrollTop()
+             console.log(h);
+             if (h > 240) {
+                 $('#floot ul li:last-child').show()
+
+             } else {
+                 $('#floot ul li:last-child').hide()
+             }
+         })
+     });
  }
