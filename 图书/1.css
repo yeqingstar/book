@@ -13,6 +13,8 @@
    li {
        list-style: none;
    }
+
+   /* 顶部 */
    .top {
        position: -webkit-sticky;
        position: sticky;
@@ -28,7 +30,6 @@
 
    .dives div {
        display: flex;
-       /* border: 1px solid red; */
    }
 
    .dives .left .cle {
@@ -74,10 +75,52 @@
        border-left: 1px solid black;
    }
 
+   .dives .right-text span {
+       width: 100%;
+   }
+
    .dives div {
        width: 100%;
    }
 
+   .right-text .dd {
+       display: none;
+       position: fixed;
+       width: 10%;
+       border: 1px solid red;
+   }
+
+   .right-text:hover .dd {
+       display: block;
+   }
+
+   .right-text span:hover {
+       color: #e30404;
+   }
+
+   .right-text .dd ul li {
+       border: 1px solid red;
+   }
+
+   .right-text .dd ul li:hover {
+       background-color: red;
+   }
+
+   /* 导航栏 */
+   .head-nav nav span {
+       margin-left: 5%;
+       margin-right: 5%;
+   }
+
+   .head-nav .collapse ul li {
+       margin: 15px;
+   }
+
+   .head-nav .collapse ul li:hover {
+       background-color: #f5e084;
+   }
+
+   /* 第二部分 */
    .tu {
        margin-left: 0%;
        width: 100%;
@@ -94,136 +137,94 @@
    .tu img {
        box-shadow: -2px 6px 19px 0px #7f818e;
        width: 100%;
-       margin-bottom: 10px;
 
    }
 
-   .tu img:hover {
+   .tu .poto:hover {
        transform: scale(1.02);
    }
 
-   .tu .back {
-       background-color: #CBB5E2;
+   .box1 {
+       border: 1px solid rgb(213, 212, 212);
+       margin: 5px;
+       margin-top: 15px;
    }
 
-   .tu .back1 {
-       background-color: #ee55ee;
+   .box1:hover {
+       background-color: #cccbcb;
    }
 
-   .tu .back2 {
-       background-color: #FDCA95;
-   }
-
-   .tu .back3 {
-       background-color: #FBADAF;
-   }
-
-   .tu .back4 {
-       background-color: #1fade5;
-   }
-
-   .poto {
-       margin-top: 20px;
+   .poto img {
+       margin-top: 10px;
        padding: 0px;
        height: 100%;
+       margin-left: 90%;
    }
 
    .tu {
        width: 100%;
    }
 
-   .tu .box-right p {
-       line-height: 10px;
-       margin-top: 25px;
-       margin-left: 15px;
+   .tu .box-right {
+       line-height: 30px;
+       text-align: center;
    }
 
-   .box .box-right .text,
-   .box1 .box-right .text,
-   .box2 .box-right .text,
-   .box3 .box-right .text,
-   .box4 .box-right .text {
-       text-indent: 1.5rem;
-   }
-
-   .box .box-right .dark,
-   .box1 .box-right .dark,
-   .box2 .box-right .dark,
-   .box3 .box-right .dark,
-   .box4 .box-right .dark {
-       margin-left: 15px;
-   }
-
-   .box .box-right .box-but,
-   .box1 .box-right .box-but1,
-   .box2 .box-right .box-but2,
-   .box3 .box-right .box-but3,
-   .box4 .box-right .box-but4 {
-       margin-top: 20px;
-       margin-bottom: 20px;
-   }
-
-   .box .box-right .box-but span:hover {
-       color: #ff6dbe;
-   }
-
-   .box1 .box-right .box-but1 span:hover {
-       color: #fb9124;
-
-   }
-
-   .box2 .box-right .box-but2 span:hover {
-       color: #ff6e72;
-   }
-
-   .box3 .box-right .box-but3 span:hover {
-       color: #5cbce3;
-
-   }
-
-   .box4 .box-right .box-but4 span:hover {
-       color: #f495f4;
-   }
-
-   .box .box-right .box-but span {
+   .box-but p {
+       border: 1px solid #CBB5E2;
+       text-align: center;
        color: #CBB5E2;
    }
 
-   .box1 .box-right .box-but1 span {
+   .box-but1 p {
+       border: 1px solid #FBADAF;
+       text-align: center;
        color: #FBADAF;
    }
 
-   .box2 .box-right .box-but2 span {
-
+   .box-but2 p {
+       border: 1px solid #de3962;
+       text-align: center;
        color: #de3962;
    }
 
-   .box3 .box-right .box-but3 span {
+   .box-but3 p {
+       border: 1px solid #1fade5;
+       text-align: center;
        color: #1fade5;
    }
 
-   .box4 .box-right .box-but4 span {
+   .box-but4 p {
+       border: 1px solid #f57ec5;
+       text-align: center;
        color: #f57ec5;
    }
 
-   .box .box-right .box-but span,
-   .box1 .box-right .box-but1 span,
-   .box2 .box-right .box-but2 span,
-   .box3 .box-right .box-but3 span,
-   .box4 .box-right .box-but4 span {
-       padding: 3px;
-       text-align: center;
-       background-color: #FFFF;
-       border-top-right-radius: 15px;
-       border-top-left-radius: 15px;
-       border-bottom-left-radius: 15px;
-       border-bottom-right-radius: 15px;
+   .box-but p:hover {
+       color: #ff6dbe;
+   }
+
+   .box-but1 p:hover {
+       color: #FBADAF;
+   }
+
+   .box-but2 p:hover {
+       color: #de3962;
+   }
+
+   .box-but3 p:hover {
+       color: #1fade5;
+   }
+
+   .box-but4 p:hover {
+       color: #f57ec5;
    }
 
    .tu .active {
        color: red;
    }
 
+   /* 第三部分 */
    .first ul li {
        padding: 15px;
    }
@@ -232,28 +233,11 @@
        text-decoration: none;
    }
 
-   .first .big-left div,h6, .fenlei .bookfen p{
-       white-space: nowrap;
-       text-overflow: ellipsis;
-       overflow: hidden;
-   }
-
    .first li:hover {
        background-color: lightblue;
    }
 
-   .first .tab .moel {
-
-       text-align: center;
-       margin-top: -11.5%;
-   }
-
-   .first .tab .moel p {
-       background-color: #00000080;
-       line-height: 40px;
-       color: #fff;
-   }
-
+   /* 第四部分 */
    .two {
        margin-top: 5%;
        margin-bottom: 5%;
@@ -281,6 +265,15 @@
        -webkit-line-clamp: 3;
        overflow: hidden;
    }
+
    .two .first-img {
        text-align: center;
+   }
+
+   h6,
+   .fenlei .bookfen p,
+   .textdan {
+       overflow: hidden;
+       text-overflow: ellipsis;
+       white-space: nowrap;
    }

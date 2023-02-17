@@ -1,6 +1,17 @@
  window.onload = function () {
+    // 判断是否有登录
+            // let login=window.screenTop()
+                //  判断是否为首次加载
+     if(window.name==""){
+        srollFn()
+        console.log(1);
+        window.name='isReload'
+        // 刷新的为2
+     }else if(  window.name='isReload'){
+        console.log(2);
+     }
+    // 时间
      function data() {
-
          let date = new Date()
          let year = date.getFullYear();
          let mou = date.getMonth();
@@ -9,7 +20,7 @@
      }
      let tiner = document.getElementById('date')
      tiner.innerHTML = data()
-
+// 关键字的循环
      function count() {
          let str = []
          let arr = ['book', 'book1', 'book2', 'book3', 'book4', 'book5', 'book6', 'book7', 'book8', 'book9',
@@ -23,7 +34,7 @@
          }
      }
      count()
-
+    //  图片的懒加载
      let str = document.getElementsByTagName('img')
      srollFn()
      window.onscroll = srollFn
@@ -32,12 +43,12 @@
          let h = window.innerHeight || document.documentElement.clientHeight
          Array.from(str).forEach((item) => {
              const ele = item.getBoundingClientRect()
-             if (ele.top > 0 && ele.top < h) {
+             if (ele.top >0&&ele.top<h) {
                  item.setAttribute('src', item.getAttribute('data-url'))
              }
          })
      }
-
+    //  评价星级
      function star() {
          // 获取标签为dark的
          let war = document.querySelector('.dark')
@@ -54,7 +65,6 @@
                  for (var i = 0; i < number.length; i++) {
                      if (i <= index) {
                          number[i].className = "active"
-                         // number[i].style.color='green'
                      } else {
                          number[i].className = ""
                      }
@@ -75,12 +85,12 @@
      var div = document.querySelector('.backtop')
      var divtop = 500
      var times
+    //  定义窗口的滚动事件
      window.onscroll = function () {
          var t = document.documentElement.scrollTop
          div.style.top = divtop + t + 'px'
      }
-
-     function backtop() {
+     div.onclick = function () {
          clearInterval(times)
          times = setInterval(function () {
              var top = document.documentElement.scrollTop
@@ -92,7 +102,6 @@
              }
          }, 100)
      }
-
      $(function () {
          //  右边选项卡上的文字
          $('#boxname div[id!=boxname1]').hide()
@@ -109,15 +118,19 @@
              $('#xuan div').eq(currentIndex - 1).show()
          })
          // 监听置顶的位置
-         $(window).scroll(function () {
-             const h = $(window).scrollTop()
-             console.log(h);
-             if (h > 240) {
-                 $('#floot ul li:last-child').show()
-
-             } else {
-                 $('#floot ul li:last-child').hide()
-             }
-         })
+         function timers(){
+            $('#floot ul li:last-child').hide()
+            $(window).scroll(function () {
+                const h = $(window).scrollTop()
+                if (h > 240) {
+                    $('#floot ul li:last-child').show()
+   
+                } else {
+                    $('#floot ul li:last-child').hide()
+                }
+            })
+         }
+         timers()
      });
+
  }
