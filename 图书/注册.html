@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册界面</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            font-family: 微软雅黑;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        select {
+            height: 40px;
+        }
+
+        .bodys {
+            width: 500px;
+            height: 450px;
+            margin: 15px auto;
+            box-shadow: 5px 5px 5px 5px gainsboro;
+            text-align: center;
+            border: 1px solid red;
+        }
+
+        .zi {
+            margin-top: 50px;
+        }
+
+        div h4 {
+            margin-left: -48%;
+            margin-top: 20px;
+        }
+
+        .xia {
+            width: 60%;
+        }
+
+        .text {
+            height: 38px;
+            width: 50%;
+        }
+
+        .phones {
+            height: 40px;
+        }
+
+        .end {
+            width: 60%;
+            margin: 5px auto;
+            background-color: orangered;
+            color: black;
+            padding: 10px;
+        }
+
+        .end span:active {
+            color: red;
+        }
+
+        .end span:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bodys">
+        <form action="" method="post" onsubmit="return get()">
+            <h1 class="zi">注册</h1>
+            <div class="guo">
+                <h4>国家\地区</h4>
+                <select class="xia" id="xia">
+                    <option value="1">China</option>
+                    <option value="1">2</option>
+                    <option value="1">3</option>
+                </select><br>
+                <span class="wen"> 成功注册账号后，国家\地区将不能修改</span>
+            </div>
+            <div class="shou">
+                <h4>手机号码</h4>
+                <select class="xia1" id="xia1">
+                    <option value="+86">+86</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select><input type="text" placeholder="请输入手机号码" class="text" id="phone"><br>
+
+                <p class="phones" id="phones"></p>
+            </div>
+            <div class="end">
+                <span onclick="phone()">立即注册</span>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+<script>
+    function phone() {
+        var text = document.getElementById('xia1')
+        var obj = document.getElementById('phone').value
+        var str = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+        var phone = document.getElementById('phones')
+        var res = str.test(obj)
+        console.log(text.value);
+        if (obj == '') {
+            phone.innerHTML = '不能为空'
+            document.getElementById('phones').style.color = 'red'
+            document.getElementById('phone').style.borderColor = 'red'
+            return false
+        } else if (!res) {
+            phone.innerHTML = '请输入正确的手机号码'
+            document.getElementById('phones').style.color = 'red'
+            document.getElementById('phone').style.borderColor = 'red'
+            return false
+        } else {
+            localStorage.setItem('phones', obj)
+            console.log(  localStorage.setItem('phones', obj));
+            localStorage.setItem('text', text.value)
+            console.log(localStorage.setItem('text', text.value));
+            location.href='./res2.html'
+            return true
+        }
+    }
+    function get() {
+        if (phone()) {
+            return true
+        }
+    }
+    get()
+</script>

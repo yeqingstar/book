@@ -42,7 +42,7 @@
                             class="user-img img-fluid">
                     </div>
                     <div class="col-xl-10 col-2 right-text">
-                        <span>Loing
+                        <span id="login">Loing
                             <div class="dd">
                                 <ul>
                                     <li>客服</li>
@@ -60,7 +60,6 @@
         .find {
             border-bottom: 1px solid #dcdcdc;
             background: #fafafa;
-            /* display: none; */
         }
 
         .find p {
@@ -280,100 +279,216 @@
         </div>
 
     </div>
-
     <div class="container">
-        <div class="col-xl-12 first">
-            <ul id="myTab" class="nav nav-pills" role="tablist">
-                <li class="active"><a href="#rule" role="tab" data-toggle="pill">动物百科</a></li>
-                <li><a href="#forum" role="tab" data-toggle="pill">军事百科</a>
-                </li>
-                <li><a href="#security" role="tab" data-toggle="pill">经济百科</a></li>
-                <li><a href="#four" role="tab" data-toggle="pill">政治百科</a></li>
-                <li><a href="#five" role="tab" data-toggle="pill">更多</a></li>
-            </ul>
-            <style>
-                .bigbox>img {
-                    max-width: 100%;
-                }
+        <div class="row">
+            <div class="col-8 first">
+                <ul id="myTab" class="nav nav-pills" role="tablist">
+                    <li class="active"><a href="#rule" role="tab" data-toggle="pill">动物百科</a></li>
+                    <li><a href="#forum" role="tab" data-toggle="pill">军事百科</a>
+                    </li>
+                    <li><a href="#security" role="tab" data-toggle="pill">经济百科</a></li>
+                    <li><a href="#four" role="tab" data-toggle="pill">政治百科</a></li>
+                    <li><a href="#five" role="tab" data-toggle="pill">更多</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h5>畅销榜</h5>
+            </div>
+        </div>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade show active" id="rule">
+                <div class="row tab justify-content-around">
+                    <div class="col-8 flex-md-wrap d-flex bigbox">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="row">
+                                <div class="col-5">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/YR_lP3aWRXAn_X7Y_VRrdQ==/8796093024910410769"
+                                        class="book-photo img-fluid" alt="唐诗里的烟火人间">
+                                </div>
+                                <div class="col-7">
+                                    <p class="textdan">唐诗里的人间烟火</p>
+                                    <p class="textdan">温柏林</p>
+                                    <p class="textshow">
+                                        微信知乎历史大神温伯陵，击碎对唐朝诗人的刻板印象，带你全面了解唐朝诗人，讲述隐藏在唐诗背后的故事。
 
-                .bigbox>div {
-                    padding: 5px;
-                    border: 1px solid #b6b5b2;
-                }
+                                        很多人认为，诗词中所表现出的思想和情感就代表了作者本人，但实际上这种认识并不准确。比如我们印象中豪放洒脱的“诗仙”李白，实际上一身都为功名所累；“诗圣”杜甫年轻时曾是一纨绔子弟，后来屡遭挫折才渐渐接了地气；号称“诗佛”的谦谦君子王维，也曾写过歌功颂德给皇帝拍马屁的诗；山水田园派诗人孟浩然，实际上也热衷于功名，只是由于自己情商不够一直碰壁而已；都说高适是诗人，实际上带兵打仗、建功立业、治理地方才是高适的主业，写诗不过随手而已；写下“曾经沧海难为水，除却巫山不是云”这种千古名句的多情种子元稹，也曾为了自己的功名利禄抛弃过多位相恋过的女子；出身寒门才华横溢的宋之问，为了往上爬，居然不择手段，有奶便是娘……
 
-                .tab .textshow {
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical;
-                    -webkit-line-clamp: 3;
-                    overflow: hidden;
-                    color: #8e8d8c;
-                }
-
-                .tab div p {
-                    font-size: 14px;
-                    line-height: 20px;
-                }
-            </style>
-            <div id="myTabContent" class="tab-content">
-                <div class="tab-pane fade show active" id="rule">
-                    <div class="row tab">
-                        <div class="col-10 flex-md-wrap d-flex bigbox">
-                            <div class="col-md-5 col-sm-5">
-                                <div class="row">
-                                    <div class="col-md-5 col-sm-12" style="width:100%;">
-                                        <img src=""
-                                            data-url="https://easyreadfs.nosdn.127.net/YR_lP3aWRXAn_X7Y_VRrdQ==/8796093024910410769"
-                                            class="book-photo img-fluid" alt="唐诗里的烟火人间">
-                                    </div>
-                                    <div class="col-7">
-                                        <p class="textdan">唐诗里的人间烟火</p>
-                                        <p class="textdan">温柏林</p>
-                                        <p class="textshow">
-                                            微信知乎历史大神温伯陵，击碎对唐朝诗人的刻板印象，带你全面了解唐朝诗人，讲述隐藏在唐诗背后的故事。
-
-                                            很多人认为，诗词中所表现出的思想和情感就代表了作者本人，但实际上这种认识并不准确。比如我们印象中豪放洒脱的“诗仙”李白，实际上一身都为功名所累；“诗圣”杜甫年轻时曾是一纨绔子弟，后来屡遭挫折才渐渐接了地气；号称“诗佛”的谦谦君子王维，也曾写过歌功颂德给皇帝拍马屁的诗；山水田园派诗人孟浩然，实际上也热衷于功名，只是由于自己情商不够一直碰壁而已；都说高适是诗人，实际上带兵打仗、建功立业、治理地方才是高适的主业，写诗不过随手而已；写下“曾经沧海难为水，除却巫山不是云”这种千古名句的多情种子元稹，也曾为了自己的功名利禄抛弃过多位相恋过的女子；出身寒门才华横溢的宋之问，为了往上爬，居然不择手段，有奶便是娘……
-
-                                            唐诗就是唐朝人的微博，它承载了唐朝人“春风得意马蹄疾，一日看尽长安花”的狂喜，“明月松间照，清泉石上流”的闲适，“感时花溅泪，恨别鸟惊心”的悲悯，“男儿何不带吴钩，收取关山五十州”的豪情……唐诗是唐朝人表达思想、抒发情感的工具，而读唐诗则是了解唐朝诗人，甚至是了解唐朝的方便法门。
-                                        </p>
-                                        <p>立即阅读</p>
-                                    </div>
+                                        唐诗就是唐朝人的微博，它承载了唐朝人“春风得意马蹄疾，一日看尽长安花”的狂喜，“明月松间照，清泉石上流”的闲适，“感时花溅泪，恨别鸟惊心”的悲悯，“男儿何不带吴钩，收取关山五十州”的豪情……唐诗是唐朝人表达思想、抒发情感的工具，而读唐诗则是了解唐朝诗人，甚至是了解唐朝的方便法门。
+                                    </p>
+                                    <p>立即阅读</p>
                                 </div>
                             </div>
-                            <div class="col-md-5 col-sm-5">
-                                <div class="row ">
-                                    <div class="col-xl-5 col-sm-5">
-                                        <img src=""
-                                            data-url="https://easyreadfs.nosdn.127.net/ZL79ueMf3vpmE3DT9rFRBQ==/8796093024910361983"
-                                            alt="南国之冬" class="book-photo img-fluid">
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="row ">
+                                <div class="col-xl-5 col-sm-5">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/ZL79ueMf3vpmE3DT9rFRBQ==/8796093024910361983"
+                                        alt="南国之冬" class="book-photo img-fluid">
+                                </div>
+                                <div class="col-xl-7 col-sm-7">
+                                    <p class="textdan">南国之冬</p>
+                                    <p class="textdan">张大春</p>
+                                    <p class="textshow">
+                                        大时代，就像黑洞一样，把每个人都卷在里面、陷在里面；
+                                        把人人都拥抱起来，有如浪潮迭生，浮沫相连，密不可分。
+
+                                        演罢《春灯公子》市井豪侠江湖快意，拾掇《战夏阳》知识分子官场怪态，访遍《一叶秋》鬼怪妖狐仙凡遇会，作家张大春于十五年后，终于为“春、夏、秋、冬”系列，画上了圆满的句号。
+
+                                        《南国之冬》开篇延续了《一叶秋》的狐鬼仙怪，由神鬼传说引入历史传奇，作者与众多电影人的交往探讨，真真假假，虚虚实实，串起了那些可能出现在电影中的历史传说、奇闻异事。开篇《血饵》讲生，末篇《离魂》则是魂魄出窍，由生而死，由死复生，最终回归传奇小说的本质。
+                                    </p>
+                                    <div class="col-12">
+                                        <p class="but">立即阅读</p>
                                     </div>
-                                    <div class="col-xl-7 col-sm-7">
-                                        <p class="textdan">南国之冬</p>
-                                        <p class="textdan">张大春</p>
-                                        <p class="textshow">
-                                            大时代，就像黑洞一样，把每个人都卷在里面、陷在里面；
-                                            把人人都拥抱起来，有如浪潮迭生，浮沫相连，密不可分。
 
-                                            演罢《春灯公子》市井豪侠江湖快意，拾掇《战夏阳》知识分子官场怪态，访遍《一叶秋》鬼怪妖狐仙凡遇会，作家张大春于十五年后，终于为“春、夏、秋、冬”系列，画上了圆满的句号。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="row ">
+                                <div class="col-md-5 col-sm-12">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/N7BrfRSFkPknmQR9bHJxcw==/8796093025048126568"
+                                        class="book-photo img-fluid" alt="要把读书当回事">
+                                </div>
+                                <div class="col-md-7 col-sm-12">
+                                    <p class="textdan">要把读书当回事</p>
+                                    <p class="textdan">季羡林</p>
+                                    <p class="textshow">
+                                        本书为季羡林先生散文精选集，主要收录了季羡林一生的读书心得，以其求学读书的早年经历，展现了一代国学大师成就文化事业的精神积累过程，以及在浩淼书海中寻求真知的思想路径。作者将关于读书学习的真知灼见融入对往事平实动人的追忆之中，感怀故人旧事对其学术发展的影响，鼓励读者以积极的心态和正确的价值观看待学习和读书。同时品评国内外经典著作，整理读书方法和研学思路，给徘徊于书山之中的读者指明方向。
+                                    </p>
+                                    <p>立即阅读</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="row ">
+                                <div class="col-md-5 col-sm-12">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/lQA1qjW9T1jargbZ6NTLMA==/8796093024902143624"
+                                        class="book-photo img-fluid" alt="三四郎">
+                                </div>
+                                <div class="col-md-7 col-sm-12">
+                                    <p class="textdan">三四郎</p>
+                                    <p class="textdan">【日】夏目漱石,汪明</p>
+                                    <p class="textshow">
+                                        主人公小川三四郎从熊本的高中毕业后，考上了东京的大学。来到东京这个与他以前的认知完全不同的世界后，在现代文明和现代女性的冲击下，他彷徨迷茫，不知所措。他被三种世界同时包围，一是故乡熊本，二是野野宫和广田老师所在的学问的世界，三是浮华世界。
 
-                                            《南国之冬》开篇延续了《一叶秋》的狐鬼仙怪，由神鬼传说引入历史传奇，作者与众多电影人的交往探讨，真真假假，虚虚实实，串起了那些可能出现在电影中的历史传说、奇闻异事。开篇《血饵》讲生，末篇《离魂》则是魂魄出窍，由生而死，由死复生，最终回归传奇小说的本质。
-                                        </p>
-                                        <div class="col-12">
-                                            <p class="but">立即阅读</p>
+                                        三四郎越来越被他暗恋的对象——美弥子所在的浮华世界所吸引。三四郎对美弥子一往情深，可美弥子的态度却暧昧含糊。她数次向三四郎提过“迷途的羔羊”这一词语，却最终与哥哥的朋友结婚。
+
+                                        平凡的青年人在与大都市形形色色的人的交流中，也慢慢得到成长。
+                                    </p>
+                                    <p>立即阅读</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </style>
+                    <div class="col-3 hot">
+                        <ul id="hot">
+                            <li>
+                                <a title="四大名著·权威定本（套装4册）" href="https://yuedu.163.com/source/d5b6779ca43543a99a00532b1911573e_4"><i>01</i> 四大名著·权威定本（套装4册）</a>
+                                <div class="col-12 none justify-content-sm-between" id="none1">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img class="img-fluid"
+                                                data-url="https://easyreadfs.nosdn.127.net/sQaJs2pC_CZImhmcWXydmw==/8796093024894756157"
+                                                src="https://easyreadfs.nosdn.127.net/sQaJs2pC_CZImhmcWXydmw==/8796093024894756157"
+                                                alt="四大名著·权威定本（套装4册）">
                                         </div>
+                                        <div class="col-6">
+                                            <p>【明】吴承恩,【明】罗贯中,【明】施耐庵,【清】曹雪芹,</p>
 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-5 col-sm-5">
+                            </li>
+                            <li>
+                                <a title=" 治愈系文学丛书：在意外来临前活在当下套装10册）"><i>02</i>治愈系文学丛书：在意外来临前活在当下套装10册）</a>
+                                <div class="col-12 none" id="none2">
+
+                                    <div class="row ">
+                                        <div class="col-6">
+                                            <img class="img-fluid"
+                                                data-url="https://easyreadfs.nosdn.127.net/du-yNOxuMhIJdVZ3bLbQbg==/8796093024911834715"
+                                                src="https://easyreadfs.nosdn.127.net/du-yNOxuMhIJdVZ3bLbQbg==/8796093024911834715"
+                                                alt="治愈系文学丛书：在意外来临前活在当下（套装共10册）">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p> 汪曾祺,李叔同,梁实秋,梁晓声,沈从文,木心,小新,贾健,康娜,汤伟</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a title="爱你就像爱生命" href="https://yuedu.163.com/source/84931d9947894d62a4502b98e53bb0ad_4"><i>03</i> 爱你就像爱生命</a>
+                                <div class="col-12 none" id="none3">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img class="img-fluid"
+                                                data-url="https://easyreadfs.nosdn.127.net/kGoxAfycceLirMH6OjSmhw==/8796093024903715408"
+                                                src="https://easyreadfs.nosdn.127.net/kGoxAfycceLirMH6OjSmhw==/8796093024903715408"
+                                                alt="爱你就像爱生命">
+                                        </div>
+                                        <div class="col-6">
+                                            <p>王小波</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a title=" 钝感力（典藏版）"><i>04</i> 钝感力（典藏版）</a>
+                                <div class="col-12 none" id="none4">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img class="img-fluid"
+                                                data-url="https://easyreadfs.nosdn.127.net/cs42rA6o0TJ3yb9UZSDzhg==/8796093024884353543"
+                                                src="https://easyreadfs.nosdn.127.net/cs42rA6o0TJ3yb9UZSDzhg==/8796093024884353543"
+                                                alt="钝感力（典藏版）">
+                                        </div>
+                                        <div class="col-6">
+                                            <p>【日】渡边淳一,李迎跃</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a title="局外人"href="/source/5a878a4541f54d8689689dcc29feda89_4" ><i>05</i> 局外人</a>
+                                <div class="col-12 none" id="none5">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img class="img-fluid"
+                                                data-url="https://easyreadfs.nosdn.127.net/DWbaM7uIOE0kXl4cSx--oQ==/8796093024896565770"
+                                                src="https://easyreadfs.nosdn.127.net/DWbaM7uIOE0kXl4cSx--oQ==/8796093024896565770"
+                                                alt="局外人">
+                                        </div>
+                                        <div class="col-6">
+                                            <p>【法】阿尔贝·加缪,郑克鲁</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade " id="forum">
+                <div class="row tab">
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-6">
                                 <div class="row ">
-                                    <div class="col-md-5 col-sm-12">
+                                    <div class="col-6">
                                         <img src=""
                                             data-url="https://easyreadfs.nosdn.127.net/N7BrfRSFkPknmQR9bHJxcw==/8796093025048126568"
-                                            class="book-photo img-fluid" alt="要把读书当回事">
+                                            class="book-photo" alt="要把读书当回事">
                                     </div>
-                                    <div class="col-md-7 col-sm-12">
-                                        <p class="textdan">要把读书当回事</p>
-                                        <p class="textdan">季羡林</p>
+                                    <div class="col-6">
+                                        <p>要把读书当回事</p>
+                                        <p>季羡林</p>
                                         <p class="textshow">
                                             本书为季羡林先生散文精选集，主要收录了季羡林一生的读书心得，以其求学读书的早年经历，展现了一代国学大师成就文化事业的精神积累过程，以及在浩淼书海中寻求真知的思想路径。作者将关于读书学习的真知灼见融入对往事平实动人的追忆之中，感怀故人旧事对其学术发展的影响，鼓励读者以积极的心态和正确的价值观看待学习和读书。同时品评国内外经典著作，整理读书方法和研学思路，给徘徊于书山之中的读者指明方向。
                                         </p>
@@ -381,179 +496,72 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-5 col-sm-5">
+                            <div class="col-6">1</div>
+                            <div class="col-6">1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade " id="security">
+                <div class="row tab">
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-6">
                                 <div class="row ">
-                                    <div class="col-md-5 col-sm-12">
+                                    <div class="col-6">
                                         <img src=""
-                                            data-url="https://easyreadfs.nosdn.127.net/lQA1qjW9T1jargbZ6NTLMA==/8796093024902143624"
-                                            class="book-photo img-fluid" alt="三四郎">
+                                            data-url="https://easyreadfs.nosdn.127.net/N7BrfRSFkPknmQR9bHJxcw==/8796093025048126568"
+                                            class="book-photo img-fluid" alt="要把读书当回事">
                                     </div>
-                                    <div class="col-md-7 col-sm-12">
-                                        <p class="textdan">三四郎</p>
-                                        <p class="textdan">【日】夏目漱石,汪明</p>
+                                    <div class="col-6">
+                                        <p>要把读书当回事</p>
+                                        <p>季羡林</p>
                                         <p class="textshow">
-                                            主人公小川三四郎从熊本的高中毕业后，考上了东京的大学。来到东京这个与他以前的认知完全不同的世界后，在现代文明和现代女性的冲击下，他彷徨迷茫，不知所措。他被三种世界同时包围，一是故乡熊本，二是野野宫和广田老师所在的学问的世界，三是浮华世界。
-
-                                            三四郎越来越被他暗恋的对象——美弥子所在的浮华世界所吸引。三四郎对美弥子一往情深，可美弥子的态度却暧昧含糊。她数次向三四郎提过“迷途的羔羊”这一词语，却最终与哥哥的朋友结婚。
-
-                                            平凡的青年人在与大都市形形色色的人的交流中，也慢慢得到成长。
+                                            本书为季羡林先生散文精选集，主要收录了季羡林一生的读书心得，以其求学读书的早年经历，展现了一代国学大师成就文化事业的精神积累过程，以及在浩淼书海中寻求真知的思想路径。作者将关于读书学习的真知灼见融入对往事平实动人的追忆之中，感怀故人旧事对其学术发展的影响，鼓励读者以积极的心态和正确的价值观看待学习和读书。同时品评国内外经典著作，整理读书方法和研学思路，给徘徊于书山之中的读者指明方向。
                                         </p>
                                         <p>立即阅读</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="tab-pane fade " id="forum">
-                    <div class="row tab">
-                        <div class="col-8">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="row ">
-                                        <div class="col-6">
-                                            <img src=""
-                                                data-url="https://easyreadfs.nosdn.127.net/N7BrfRSFkPknmQR9bHJxcw==/8796093025048126568"
-                                                class="book-photo" alt="要把读书当回事">
-                                        </div>
-                                        <div class="col-6">
-                                            <p>要把读书当回事</p>
-                                            <p>季羡林</p>
-                                            <p class="textshow">
-                                                本书为季羡林先生散文精选集，主要收录了季羡林一生的读书心得，以其求学读书的早年经历，展现了一代国学大师成就文化事业的精神积累过程，以及在浩淼书海中寻求真知的思想路径。作者将关于读书学习的真知灼见融入对往事平实动人的追忆之中，感怀故人旧事对其学术发展的影响，鼓励读者以积极的心态和正确的价值观看待学习和读书。同时品评国内外经典著作，整理读书方法和研学思路，给徘徊于书山之中的读者指明方向。
-                                            </p>
-                                            <p>立即阅读</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">1</div>
-                                <div class="col-6">1</div>
-                            </div>
+                            <div class="col-6">1</div>
+                            <div class="col-6">1</div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade " id="security">
-                    <div class="row tab">
-                        <div class="col-8">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="row ">
-                                        <div class="col-6">
-                                            <img src=""
-                                                data-url="https://easyreadfs.nosdn.127.net/N7BrfRSFkPknmQR9bHJxcw==/8796093025048126568"
-                                                class="book-photo img-fluid" alt="要把读书当回事">
-                                        </div>
-                                        <div class="col-6">
-                                            <p>要把读书当回事</p>
-                                            <p>季羡林</p>
-                                            <p class="textshow">
-                                                本书为季羡林先生散文精选集，主要收录了季羡林一生的读书心得，以其求学读书的早年经历，展现了一代国学大师成就文化事业的精神积累过程，以及在浩淼书海中寻求真知的思想路径。作者将关于读书学习的真知灼见融入对往事平实动人的追忆之中，感怀故人旧事对其学术发展的影响，鼓励读者以积极的心态和正确的价值观看待学习和读书。同时品评国内外经典著作，整理读书方法和研学思路，给徘徊于书山之中的读者指明方向。
-                                            </p>
-                                            <p>立即阅读</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">1</div>
-                                <div class="col-6">1</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade " id="four">
-                    <div class="row tab">
-                        <div class="col-8">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="row ">
-                                        <div class="col-6">
-                                            <img src=""
-                                                data-url="https://easyreadfs.nosdn.127.net/N7BrfRSFkPknmQR9bHJxcw==/8796093025048126568"
-                                                class="book-photo img-fluid" alt="要把读书当回事">
-                                        </div>
-                                        <div class="col-6">
-                                            <p>要把读书当回事</p>
-                                            <p>季羡林</p>
-                                            <p class="textshow">
-                                                本书为季羡林先生散文精选集，主要收录了季羡林一生的读书心得，以其求学读书的早年经历，展现了一代国学大师成就文化事业的精神积累过程，以及在浩淼书海中寻求真知的思想路径。作者将关于读书学习的真知灼见融入对往事平实动人的追忆之中，感怀故人旧事对其学术发展的影响，鼓励读者以积极的心态和正确的价值观看待学习和读书。同时品评国内外经典著作，整理读书方法和研学思路，给徘徊于书山之中的读者指明方向。
-                                            </p>
-                                            <p>立即阅读</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">1</div>
-                                <div class="col-6">1</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade " id="five">
-                    跟多
                 </div>
             </div>
+            <div class="tab-pane fade " id="four">
+                <div class="row tab">
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row ">
+                                    <div class="col-6">
+                                        <img src=""
+                                            data-url="https://easyreadfs.nosdn.127.net/N7BrfRSFkPknmQR9bHJxcw==/8796093025048126568"
+                                            class="book-photo img-fluid" alt="要把读书当回事">
+                                    </div>
+                                    <div class="col-6">
+                                        <p>要把读书当回事</p>
+                                        <p>季羡林</p>
+                                        <p class="textshow">
+                                            本书为季羡林先生散文精选集，主要收录了季羡林一生的读书心得，以其求学读书的早年经历，展现了一代国学大师成就文化事业的精神积累过程，以及在浩淼书海中寻求真知的思想路径。作者将关于读书学习的真知灼见融入对往事平实动人的追忆之中，感怀故人旧事对其学术发展的影响，鼓励读者以积极的心态和正确的价值观看待学习和读书。同时品评国内外经典著作，整理读书方法和研学思路，给徘徊于书山之中的读者指明方向。
+                                        </p>
+                                        <p>立即阅读</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">1</div>
+                            <div class="col-6">1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade " id="five">
+                跟多
+            </div>
         </div>
+
     </div>
-    <style>
-        /* 分类阅读组件 */
-        .fenlei {
-            margin-top: 5%;
-        }
-
-        .fenlei .tab-content {
-            margin: 5px;
-            border: 1px solid rgb(168, 165, 165);
-        }
-
-        .fenlei .tab-content .tab-pane {
-            margin: 15px;
-        }
-
-        .fenlei ul li {
-            line-height: 40px;
-            margin: 5px;
-        }
-
-        .fenlei ul li a {
-            color: #8e8d8c;
-            font-size: 14px;
-            text-decoration: none;
-        }
-
-        .fenlei ul li a:hover {
-            color: #e30404;
-        }
-
-        .fenlei .bookfen h6:hover {
-            color: #e5401f;
-        }
-
-        .fenlei .bookfen a {
-            align-items: center;
-        }
-
-        .fenlei .bookfen p {
-            font-size: 14px;
-            color: #b6b5b2;
-        }
-
-        .fenlei .bookfen img {
-            margin-bottom: 5%;
-        }
-
-        .fenlei .bookfen span {
-            line-height: 10px;
-        }
-
-        .fenlei .bookfen div {
-            padding: 15px;
-            margin-top: 0;
-        }
-
-        .fenlei .bookfen div:hover {
-            background-color: #f4f2ef;
-        }
-    </style>
     <div class="container">
         <div class="col-xl-12 fenlei">
             <div class="row">
@@ -707,22 +715,6 @@
             </div>
         </div>
     </div>
-
-    <style>
-        .floot {
-            width: 3%;
-            position: fixed;
-            top: 500px;
-            right: 50px;
-        }
-
-        .floot ul li {
-            border: 1px solid red;
-            width: 100%;
-            height: 50px;
-            margin-top: 20px;
-        }
-    </style>
     <div class="floot d-none d-lg-block" id="floot">
         <ul>
             <li>

@@ -1,16 +1,18 @@
  window.onload = function () {
-    // 判断是否有登录
-            // let login=window.screenTop()
-                //  判断是否为首次加载
-     if(window.name==""){
-        srollFn()
-        console.log(1);
-        window.name='isReload'
-        // 刷新的为2
-     }else if(  window.name='isReload'){
-        console.log(2);
-     }
-    // 时间
+     // 判断是否有登录
+     console.log(login);
+     let timers = setInterval(function () {
+         if (window.name='') {
+             console.log(1);
+             window.name = 'isReload'
+             // 刷新的为2
+         } else if (window.name = 'isReload') {
+            srollFn()
+            // clearInterval(timers)
+             console.log(2);
+         }
+     }, 2500)
+     // 时间
      function data() {
          let date = new Date()
          let year = date.getFullYear();
@@ -20,7 +22,7 @@
      }
      let tiner = document.getElementById('date')
      tiner.innerHTML = data()
-// 关键字的循环
+     // 关键字的循环
      function count() {
          let str = []
          let arr = ['book', 'book1', 'book2', 'book3', 'book4', 'book5', 'book6', 'book7', 'book8', 'book9',
@@ -34,7 +36,7 @@
          }
      }
      count()
-    //  图片的懒加载
+     //  图片的懒加载
      let str = document.getElementsByTagName('img')
      srollFn()
      window.onscroll = srollFn
@@ -43,12 +45,12 @@
          let h = window.innerHeight || document.documentElement.clientHeight
          Array.from(str).forEach((item) => {
              const ele = item.getBoundingClientRect()
-             if (ele.top >0&&ele.top<h) {
+             if (ele.top > 0 && ele.top < h) {
                  item.setAttribute('src', item.getAttribute('data-url'))
              }
          })
      }
-    //  评价星级
+     //  评价星级
      function star() {
          // 获取标签为dark的
          let war = document.querySelector('.dark')
@@ -85,7 +87,7 @@
      var div = document.querySelector('.backtop')
      var divtop = 500
      var times
-    //  定义窗口的滚动事件
+     //  定义窗口的滚动事件
      window.onscroll = function () {
          var t = document.documentElement.scrollTop
          div.style.top = divtop + t + 'px'
@@ -117,18 +119,27 @@
              var currentIndex = $(this).index();
              $('#xuan div').eq(currentIndex - 1).show()
          })
+         // 畅销榜
+         $('#hot li>div[id!=none1]').hide()
+         $('#hot li').mouseenter(function () {
+             $('#hot li>div').hide()
+             $('#hot li>a>i').css('color', 'black')
+             var cur = $(this).index()
+             $('#hot li>div').eq(cur).show()
+             $('#hot li>a>i').eq(cur).show().css('color', 'red')
+         })
          // 监听置顶的位置
-         function timers(){
-            $('#floot ul li:last-child').hide()
-            $(window).scroll(function () {
-                const h = $(window).scrollTop()
-                if (h > 240) {
-                    $('#floot ul li:last-child').show()
-   
-                } else {
-                    $('#floot ul li:last-child').hide()
-                }
-            })
+         function timers() {
+             $('#floot ul li:last-child').hide()
+             $(window).scroll(function () {
+                 const h = $(window).scrollTop()
+                 if (h > 240) {
+                     $('#floot ul li:last-child').show()
+
+                 } else {
+                     $('#floot ul li:last-child').hide()
+                 }
+             })
          }
          timers()
      });
