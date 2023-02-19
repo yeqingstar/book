@@ -33,7 +33,6 @@
             margin: 15px auto;
             box-shadow: 5px 5px 5px 5px gainsboro;
             text-align: center;
-            border: 1px solid red;
         }
 
         .zi {
@@ -79,7 +78,7 @@
 <body>
     <div class="bodys">
         <form action="" method="post" onsubmit="return get()">
-            <h1 class="zi">注册</h1>
+            <h1 class="zi">注册手机号</h1>
             <div class="guo">
                 <h4>国家\地区</h4>
                 <select class="xia" id="xia">
@@ -130,7 +129,7 @@
             console.log(  localStorage.setItem('phones', obj));
             localStorage.setItem('text', text.value)
             console.log(localStorage.setItem('text', text.value));
-            location.href='./res2.html'
+            location.href='./验证码.html'
             return true
         }
     }
@@ -139,5 +138,5 @@
             return true
         }
     }
-    get()
+    // get()
 </script>

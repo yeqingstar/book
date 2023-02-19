@@ -2,13 +2,13 @@
      // 判断是否有登录
      console.log(login);
      let timers = setInterval(function () {
-         if (window.name='') {
+         if (window.name = '') {
              console.log(1);
              window.name = 'isReload'
              // 刷新的为2
          } else if (window.name = 'isReload') {
-            srollFn()
-            // clearInterval(timers)
+             srollFn()
+             // clearInterval(timers)
              console.log(2);
          }
      }, 2500)

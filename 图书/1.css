@@ -15,6 +15,9 @@
    }
 
    /* 通用 */
+   h4{
+    font-size: 16px;
+   }
    h6,
    .fenlei .bookfen p,
    .textdan {
@@ -92,40 +95,57 @@
        width: 100%;
    }
 
+   .right-text a {
+       text-decoration: none;
+       color: #111;
+   }
+
    .right-text .dd {
-       display: none;
-       position: fixed;
-       width: 10%;
-       border: 1px solid red;
+    position: absolute; 
+    left: 0%; top: 100%; 
+    color: #FFFFFF; 
+    background-color: #3f5554; 
+    z-index: 999;
+    display: none; 
+    width: 100%;
+   }
+
+   .right-text .dd li {
+    text-align: center;
+       line-height: 30px;
+   }
+
+   .right-text .dd li:hover {
+       background-color: #c1bdbd;
+       color: #111;
    }
 
    .right-text:hover .dd {
        display: block;
    }
 
-   .right-text span:hover {
+   .right-text span a:hover {
        color: #e30404;
    }
 
-   .right-text .dd ul li {
-       border: 1px solid red;
+   .find {
+       border-bottom: 1px solid #dcdcdc;
+       background: #fafafa;
+       display: none;
    }
 
-   .right-text .dd ul li:hover {
-       background-color: red;
+   .find p {
+    color: #d9ae6a;
+       text-align: center;
    }
 
    /* 导航栏 */
-   .head-nav nav span {
-       margin-left: 5%;
-       margin-right: 5%;
-   }
-
    .head-nav .collapse ul li {
        margin: 15px;
    }
 
    .head-nav .collapse ul li:hover {
+       transition: all 0.3s;
        background-color: #f5e084;
    }
 
@@ -160,6 +180,7 @@
    }
 
    .box1:hover {
+       transition: all 0.3s;
        background-color: #cccbcb;
    }
 
@@ -233,32 +254,31 @@
        color: red;
    }
 
-   /* 动物百科 */
-   .first ul li {
-       padding: 15px;
-   }
+   /* 代表作 */
 
    .first ul li a {
        text-decoration: none;
-   }
-
-   .first li:hover {
-       background-color: lightblue;
+       color: #111;
+       font-size: 18px;
    }
 
    .bigbox>img {
        max-width: 100%;
    }
-   .bigbox p:last-child:hover{
-    color: #e30404;
+
+   .bigbox p:last-child:hover {
+       color: #e30404;
    }
+
    .bigbox>div {
        padding: 8px;
        border: 1px solid #b6b5b2;
    }
-   .bigbox>div:hover{
-    background-color: #e1e1e0;
+
+   .bigbox>div:hover {
+       background-color: #e1e1e0;
    }
+
    .tab .textshow {
        display: -webkit-box;
        -webkit-box-orient: vertical;
@@ -297,18 +317,22 @@
    }
 
    .hot ul li:hover i {
+       transition: all 0.3s;
        color: #e5401f;
    }
 
    .hot ul li a {
-    color: black;
+       color: black;
        text-decoration: none;
    }
-   .hot ul li a:hover{
-   color: #e5401f;
+
+   .hot ul li a:hover {
+       transition: all 0.3s;
+       color: #e5401f;
    }
 
    .hot ul li:hover {
+       transition: all 0.3s;
        background-color: #dfdfdf;
    }
 
@@ -338,10 +362,12 @@
    }
 
    .fenlei ul li a:hover {
+       transition: all 0.3s;
        color: #e30404;
    }
 
    .fenlei .bookfen h6:hover {
+       transition: all 0.3s;
        color: #e5401f;
    }
 
@@ -368,6 +394,7 @@
    }
 
    .fenlei .bookfen div:hover {
+       transition: all 0.3s;
        background-color: #f4f2ef;
    }
 

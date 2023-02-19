@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        font-family: 微软雅黑;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    ul,
+    li {
+        list-style: none;
+    }
+
+    .bodys {
+        width: 500px;
+        height: 450px;
+        margin: 0 auto;
+        box-shadow: 5px 5px 5px 5px gainsboro;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    .inp {
+        width: 50%;
+        height: 40px;
+    }
+
+    .btn {
+        width: 20%;
+        height: 40px;
+    }
+
+    .end {
+        width: 365px;
+        text-align: center;
+        margin: 15px auto;
+        background-color: rgba(250, 117, 9, 0.87);
+        color: white;
+    }
+
+    .end2 {
+        width: 365px;
+        border: 1px solid gray;
+        text-align: center;
+        margin: 15px auto;
+        color: black;
+    }
+
+    .end h3:active {
+        color: rgb(243, 236, 237);
+    }
+
+    .end h3:hover {
+        color: pink;
+    }
+
+    .end2 h3:active {
+        color: red;
+    }
+
+    .end2 h3:hover {
+        color: red;
+    }
+</style>
+
+<body>
+    <div class="bodys">
+        <h1>小米注册官网</h1>
+        <span>我们已经发行一条验证码短信至</span>
+        <span id="tex" class="tex"></span>
+        <span id="iphons" class="iphons">我们已经发行一条验证码短信至</span><br>
+        <span id="text2" class="text2">请输入短信中的验证码</span>
+        <div id="yanzheng" class="yanzheng">
+            <input type="text" placeholder="请输入验证码" id="inp" value="" class="inp">
+            <input type="button" onclick="check()" value="发送验证码" id="btn" class="btn">
+        </div>
+        <div id="end" class="end">
+            <h3 onclick="res()">下一步</h3>
+        </div>
+        <div id="end2" class="end2">
+            <h3 onclick="ret()">返回</h3>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    // 获取本地内存的手机号和地区号
+    var text = localStorage.getItem('phones')
+    var reg = localStorage.getItem('text')
+    // 把获取的值渲染到页面上
+    document.getElementById('tex').innerHTML = reg
+    document.getElementById('tex').style.color = 'red';
+    document.getElementById('iphons').innerHTML = text
+    document.getElementById('iphons').style.color = 'red';
+    // 返回方法 回退
+    function ret() {
+        javascript: history.go(-1)
+    }
+    var code; //在全局定义验证码   
+    function check() {
+        code = "";
+        var codeLength = 4; //验证码的长度  
+        var int = document.getElementById('inp')
+        var random = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9); //随机数  
+        for (var i = 0; i < codeLength; i++) { //循环操作  
+            var index = Math.floor(Math.random() * 10); //取得随机数的索引（0~35）  
+            code += random[index]; //根据索引取得随机数加到code上  
+        }
+        // 获取验证的节点
+        var checkCode = document.getElementById("btn");
+        // 初始秒数
+        var tex = 5
+        // 按钮初始状态为true
+        checkCode.disabled = true
+        // 定时器
+        var timeout = setInterval(() => {
+            checkCode.value = '重新发送' + "(" + tex-- + ")"
+            if (tex == 0) {
+                // 秒数为0之前不可点击
+                checkCode.disabled = false
+                checkCode.value = '发送验证码'
+                int.value = code; //把code值赋给验证码 
+                clearInterval(timeout)
+            }
+            console.log(tex);
+        }, 1000)
+    }
+
+    function res() {
+        var inp = document.getElementById('inp')
+        var model=document.getElementById('model')
+        if (inp.value != code) {
+            alert('错误')
+            return false
+        } else{
+            document.getElementById('model').style.display='block'
+            // location.href = './uid.html'
+        }
+    }
+</script>

@@ -36,38 +36,29 @@
                 </div>
             </div>
             <div class="col-xl-3 col-6 right">
-                <div class="row">
-                    <div class="col-xl-2 col-8 right-img justify-content-end">
+                <div class="row justify-content-end">
+                    <div class="col-xl-2 col-sm-2 right-img justify-content-end">
                         <img src="" data-url="https://randomuser.me/api/portraits/women/63.jpg"
                             class="user-img img-fluid">
                     </div>
-                    <div class="col-xl-10 col-2 right-text">
-                        <span id="login">Loing
-                            <div class="dd">
-                                <ul>
-                                    <li>客服</li>
-                                    <li>退出登录</li>
-                                    <li>更多</li>
-                                </ul>
-                            </div>
+                    <div class="col-xl-10 col-sm-4 right-text">
+                        <span id="login"><a href="./登录.html">登录</a>
+                            |<a href="./注册.html">注册</a></span>
+                        <span id="login2">
+
                         </span>
+                        <ul class="dd" id="dd">
+                            <li>客服</li>
+                            <li onclick="loinged()">退出登录</li>
+                            <li>更多</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <style>
-        .find {
-            border-bottom: 1px solid #dcdcdc;
-            background: #fafafa;
-        }
-
-        .find p {
-            text-align: center;
-        }
-    </style>
     <div id="find" class="find">
-        <p>还未登录</p>
+        <p>您还未登录</p>
     </div>
     <!-- 导航栏 -->
     <div class="container">
@@ -121,34 +112,8 @@
         </div>
 
     </div>
-    <div class="container">
-        <hr>
-        <div class="row big">
-            <div class="col-md-12 two ">
-                <div class="row ">
-                    <div class="col-md-6 col-sm-6 two-left">图书新闻</div>
-                    <div class="col-md-6 col-sm-6 text-right"><span>更多</span></div>
-                    <div class="col-md-6 col-sm-6 first-img">
-                        <img src="./kan.jpg" data-url="./kan.jpg" class="book-photo img-fluid">
-                    </div>
-                    <div class="col-md-6 col-sm-6 two-text">
-                        <div class="row ">
-                            <div class="col-md-12 col-sm-12">
-                                <p>
-                                    图书是以文字或图像的形式记录信息的媒介，通常由许多页（由纸莎草、羊皮纸、牛皮纸或纸制成）装订在一起并用封面保护。法典中的单页是叶子，叶子的每一面都是一页。
-                                </p>
-                                <p>
-                                    作为一个智力对象，一本书的原型是一篇篇幅如此之长的作品，以至于它需要花费大量时间来撰写，并且仍然被认为是阅读时间的投资。在狭义上，一本书是一个自给自足的部分或较长作品的一部分，这种用法反映了在古代，长篇作品必须写在几个卷轴上，并且每个卷轴都必须通过它所包含的书来识别。
-                                </p>
-                            </div>
-                            <div class="col-md-12 col-sm-12 text-right" id="date">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    <!-- 图书评价 -->
     <div class="container">
         <div class="row tu">
             <div class=" col-4 back2">
@@ -279,16 +244,12 @@
         </div>
 
     </div>
+    <!-- 代表作 -->
     <div class="container">
         <div class="row">
             <div class="col-8 first">
                 <ul id="myTab" class="nav nav-pills" role="tablist">
-                    <li class="active"><a href="#rule" role="tab" data-toggle="pill">动物百科</a></li>
-                    <li><a href="#forum" role="tab" data-toggle="pill">军事百科</a>
-                    </li>
-                    <li><a href="#security" role="tab" data-toggle="pill">经济百科</a></li>
-                    <li><a href="#four" role="tab" data-toggle="pill">政治百科</a></li>
-                    <li><a href="#five" role="tab" data-toggle="pill">更多</a></li>
+                    <li class="active"><a href="#rule" role="tab" data-toggle="pill">代表作</a></li>
                 </ul>
             </div>
             <div class="col-3">
@@ -388,7 +349,9 @@
                     <div class="col-3 hot">
                         <ul id="hot">
                             <li>
-                                <a title="四大名著·权威定本（套装4册）" href="https://yuedu.163.com/source/d5b6779ca43543a99a00532b1911573e_4"><i>01</i> 四大名著·权威定本（套装4册）</a>
+                                <a title="四大名著·权威定本（套装4册）"
+                                    href="https://yuedu.163.com/source/d5b6779ca43543a99a00532b1911573e_4"><i>01</i>
+                                    四大名著·权威定本（套装4册）</a>
                                 <div class="col-12 none justify-content-sm-between" id="none1">
                                     <div class="row">
                                         <div class="col-6">
@@ -422,7 +385,9 @@
                                 </div>
                             </li>
                             <li>
-                                <a title="爱你就像爱生命" href="https://yuedu.163.com/source/84931d9947894d62a4502b98e53bb0ad_4"><i>03</i> 爱你就像爱生命</a>
+                                <a title="爱你就像爱生命"
+                                    href="https://yuedu.163.com/source/84931d9947894d62a4502b98e53bb0ad_4"><i>03</i>
+                                    爱你就像爱生命</a>
                                 <div class="col-12 none" id="none3">
                                     <div class="row">
                                         <div class="col-6">
@@ -455,7 +420,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a title="局外人"href="/source/5a878a4541f54d8689689dcc29feda89_4" ><i>05</i> 局外人</a>
+                                <a title="局外人" href="/source/5a878a4541f54d8689689dcc29feda89_4"><i>05</i> 局外人</a>
                                 <div class="col-12 none" id="none5">
                                     <div class="row">
                                         <div class="col-6">
@@ -562,6 +527,7 @@
         </div>
 
     </div>
+    <!-- 分类阅读 -->
     <div class="container">
         <div class="col-xl-12 fenlei">
             <div class="row">
@@ -674,25 +640,312 @@
                         </div>
                     </div>
                     <div class="tab-pane fade " id="peo">
-                        <div class="row">
-                            <div class="col-md-3">1</div>
-                            <div class="col-md-3">1</div>
-                            <div class="col-md-3">1</div>
-                            <div class="col-md-3">1</div>
-                            <div class="col-md-3">1</div>
-                            <div class="col-md-3">1</div>
-                            <div class="col-md-3">1</div>
-                            <div class="col-md-3">1</div>
+                        <div class="row bookfen">
+                            <div class="col-md-3 col-sm-3">
+                                <a title="在轮下">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/DswrhCtZ9bPfavlqWlVh-Q==/8796093024978789377"
+                                        class="img-fluid" alt="在轮下">
+                                </a>
+                                <h6 title="在轮下">在轮下</h6>
+                                <p>【德】赫尔曼·黑塞,</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/2DgzpaTRIg_dlbiyJ1qIcw==/8796093024910854011"
+                                        class="img-fluid" alt="痴人之爱">
+                                </a>
+                                <h6 title="痴人之爱">痴人之爱</h6>
+                                <p>【日】谷崎润一郎,三</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/mh2V2PQtofzwJUxZZf9qIA==/8796093024978760801"
+                                        class="img-fluid" alt="一只黑猩猩的宇宙史">
+                                </a>
+                                <h6 title="一只黑猩猩的宇宙史">一只黑猩猩的宇宙史</h6>
+                                <p>施英巍</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/dmRx3bTydNJzjLFchGKknw==/8796093024978764631"
+                                        class="img-fluid" alt="一个陌生女人的来信：茨威格中短篇小说选">
+                                </a>
+                                <h6 title="一个陌生女人的来信：茨威格中">一个陌生女人的来信：茨威格中</h6>
+                                <p>【奥地利】斯蒂芬·茨</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/-R2MmzmI9g7J_nxnQ5XS8w==/8796093024975659948"
+                                        class="img-fluid" alt="天使怒焱">
+                                </a>
+                                <h6 title="尼伯龙根">尼伯龙根</h6>
+                                <p>奥尔加·克留奇科娃</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/i9t7m5uNzRJU-taalCZS1Q==/8796093024975674016"
+                                        class="img-fluid" alt="夏日乌托邦">
+                                </a>
+                                <h6 title="天使怒焱">天使怒焱</h6>
+                                <p>迪特马尔·亚瑟·韦尔</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/8tWuB9wzwacNJP6W2gykzQ==/8796093024975463990"
+                                        class="img-fluid" alt="堕落英雄">
+                                </a>
+                                <h6 title="夏日乌托邦">夏日乌托邦</h6>
+                                <p>轩子</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/A9NtB0L4Dj2JQFp0wC3skg==/8796093024975479189"
+                                        class="img-fluid" alt="尼伯龙根">
+                                </a>
+                                <h6 title="堕落英雄">堕落英雄</h6>
+                                <p>【美】罗海妮·埃克哈</p>
+                            </div>
+
                         </div>
                     </div>
                     <div class="tab-pane fade " id="sec">
-                        3
+                        <div class="row bookfen">
+                            <div class="col-md-3 col-sm-3">
+                                <a title="在轮下">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/DswrhCtZ9bPfavlqWlVh-Q==/8796093024978789377"
+                                        class="img-fluid" alt="在轮下">
+                                </a>
+                                <h6 title="在轮下">在轮下</h6>
+                                <p>【德】赫尔曼·黑塞,</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/2DgzpaTRIg_dlbiyJ1qIcw==/8796093024910854011"
+                                        class="img-fluid" alt="痴人之爱">
+                                </a>
+                                <h6 title="痴人之爱">痴人之爱</h6>
+                                <p>【日】谷崎润一郎,三</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/mh2V2PQtofzwJUxZZf9qIA==/8796093024978760801"
+                                        class="img-fluid" alt="一只黑猩猩的宇宙史">
+                                </a>
+                                <h6 title="一只黑猩猩的宇宙史">一只黑猩猩的宇宙史</h6>
+                                <p>施英巍</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/dmRx3bTydNJzjLFchGKknw==/8796093024978764631"
+                                        class="img-fluid" alt="一个陌生女人的来信：茨威格中短篇小说选">
+                                </a>
+                                <h6 title="一个陌生女人的来信：茨威格中">一个陌生女人的来信：茨威格中</h6>
+                                <p>【奥地利】斯蒂芬·茨</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/-R2MmzmI9g7J_nxnQ5XS8w==/8796093024975659948"
+                                        class="img-fluid" alt="天使怒焱">
+                                </a>
+                                <h6 title="尼伯龙根">尼伯龙根</h6>
+                                <p>奥尔加·克留奇科娃</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/i9t7m5uNzRJU-taalCZS1Q==/8796093024975674016"
+                                        class="img-fluid" alt="夏日乌托邦">
+                                </a>
+                                <h6 title="天使怒焱">天使怒焱</h6>
+                                <p>迪特马尔·亚瑟·韦尔</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/8tWuB9wzwacNJP6W2gykzQ==/8796093024975463990"
+                                        class="img-fluid" alt="堕落英雄">
+                                </a>
+                                <h6 title="夏日乌托邦">夏日乌托邦</h6>
+                                <p>轩子</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/A9NtB0L4Dj2JQFp0wC3skg==/8796093024975479189"
+                                        class="img-fluid" alt="尼伯龙根">
+                                </a>
+                                <h6 title="堕落英雄">堕落英雄</h6>
+                                <p>【美】罗海妮·埃克哈</p>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="tab-pane fade " id="money">
-                        4
+                        <div class="row bookfen">
+                            <div class="col-md-3 col-sm-3">
+                                <a title="在轮下">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/DswrhCtZ9bPfavlqWlVh-Q==/8796093024978789377"
+                                        class="img-fluid" alt="在轮下">
+                                </a>
+                                <h6 title="在轮下">在轮下</h6>
+                                <p>【德】赫尔曼·黑塞,</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/2DgzpaTRIg_dlbiyJ1qIcw==/8796093024910854011"
+                                        class="img-fluid" alt="痴人之爱">
+                                </a>
+                                <h6 title="痴人之爱">痴人之爱</h6>
+                                <p>【日】谷崎润一郎,三</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/mh2V2PQtofzwJUxZZf9qIA==/8796093024978760801"
+                                        class="img-fluid" alt="一只黑猩猩的宇宙史">
+                                </a>
+                                <h6 title="一只黑猩猩的宇宙史">一只黑猩猩的宇宙史</h6>
+                                <p>施英巍</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/dmRx3bTydNJzjLFchGKknw==/8796093024978764631"
+                                        class="img-fluid" alt="一个陌生女人的来信：茨威格中短篇小说选">
+                                </a>
+                                <h6 title="一个陌生女人的来信：茨威格中">一个陌生女人的来信：茨威格中</h6>
+                                <p>【奥地利】斯蒂芬·茨</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/-R2MmzmI9g7J_nxnQ5XS8w==/8796093024975659948"
+                                        class="img-fluid" alt="天使怒焱">
+                                </a>
+                                <h6 title="尼伯龙根">尼伯龙根</h6>
+                                <p>奥尔加·克留奇科娃</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/i9t7m5uNzRJU-taalCZS1Q==/8796093024975674016"
+                                        class="img-fluid" alt="夏日乌托邦">
+                                </a>
+                                <h6 title="天使怒焱">天使怒焱</h6>
+                                <p>迪特马尔·亚瑟·韦尔</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/8tWuB9wzwacNJP6W2gykzQ==/8796093024975463990"
+                                        class="img-fluid" alt="堕落英雄">
+                                </a>
+                                <h6 title="夏日乌托邦">夏日乌托邦</h6>
+                                <p>轩子</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/A9NtB0L4Dj2JQFp0wC3skg==/8796093024975479189"
+                                        class="img-fluid" alt="尼伯龙根">
+                                </a>
+                                <h6 title="堕落英雄">堕落英雄</h6>
+                                <p>【美】罗海妮·埃克哈</p>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="tab-pane fade " id="com">
-                        5
+                        <div class="row bookfen">
+                            <div class="col-md-3 col-sm-3">
+                                <a title="在轮下">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/DswrhCtZ9bPfavlqWlVh-Q==/8796093024978789377"
+                                        class="img-fluid" alt="在轮下">
+                                </a>
+                                <h6 title="在轮下">在轮下</h6>
+                                <p>【德】赫尔曼·黑塞,</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/2DgzpaTRIg_dlbiyJ1qIcw==/8796093024910854011"
+                                        class="img-fluid" alt="痴人之爱">
+                                </a>
+                                <h6 title="痴人之爱">痴人之爱</h6>
+                                <p>【日】谷崎润一郎,三</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/mh2V2PQtofzwJUxZZf9qIA==/8796093024978760801"
+                                        class="img-fluid" alt="一只黑猩猩的宇宙史">
+                                </a>
+                                <h6 title="一只黑猩猩的宇宙史">一只黑猩猩的宇宙史</h6>
+                                <p>施英巍</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/dmRx3bTydNJzjLFchGKknw==/8796093024978764631"
+                                        class="img-fluid" alt="一个陌生女人的来信：茨威格中短篇小说选">
+                                </a>
+                                <h6 title="一个陌生女人的来信：茨威格中">一个陌生女人的来信：茨威格中</h6>
+                                <p>【奥地利】斯蒂芬·茨</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/-R2MmzmI9g7J_nxnQ5XS8w==/8796093024975659948"
+                                        class="img-fluid" alt="天使怒焱">
+                                </a>
+                                <h6 title="尼伯龙根">尼伯龙根</h6>
+                                <p>奥尔加·克留奇科娃</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/i9t7m5uNzRJU-taalCZS1Q==/8796093024975674016"
+                                        class="img-fluid" alt="夏日乌托邦">
+                                </a>
+                                <h6 title="天使怒焱">天使怒焱</h6>
+                                <p>迪特马尔·亚瑟·韦尔</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/8tWuB9wzwacNJP6W2gykzQ==/8796093024975463990"
+                                        class="img-fluid" alt="堕落英雄">
+                                </a>
+                                <h6 title="夏日乌托邦">夏日乌托邦</h6>
+                                <p>轩子</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a title="双城记">
+                                    <img src=""
+                                        data-url="https://easyreadfs.nosdn.127.net/A9NtB0L4Dj2JQFp0wC3skg==/8796093024975479189"
+                                        class="img-fluid" alt="尼伯龙根">
+                                </a>
+                                <h6 title="堕落英雄">堕落英雄</h6>
+                                <p>【美】罗海妮·埃克哈</p>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-2 tab-content leftact" id="xuan">
@@ -715,6 +968,35 @@
             </div>
         </div>
     </div>
+    <!-- 图书新闻 -->
+    <div class="container">
+        <hr>
+        <div class="row big">
+            <div class="col-md-12 two ">
+                <div class="row ">
+                    <div class="col-md-6 col-sm-6 two-left">图书新闻</div>
+                    <div class="col-md-6 col-sm-6 text-right"><span>更多</span></div>
+                    <div class="col-md-6 col-sm-6 first-img">
+                        <img src="./kan.jpg" data-url="./kan.jpg" class="book-photo img-fluid">
+                    </div>
+                    <div class="col-md-6 col-sm-6 two-text">
+                        <div class="row ">
+                            <div class="col-md-12 col-sm-12">
+                                <p>
+                                    图书是以文字或图像的形式记录信息的媒介，通常由许多页（由纸莎草、羊皮纸、牛皮纸或纸制成）装订在一起并用封面保护。法典中的单页是叶子，叶子的每一面都是一页。
+                                </p>
+                                <p>
+                                    作为一个智力对象，一本书的原型是一篇篇幅如此之长的作品，以至于它需要花费大量时间来撰写，并且仍然被认为是阅读时间的投资。在狭义上，一本书是一个自给自足的部分或较长作品的一部分，这种用法反映了在古代，长篇作品必须写在几个卷轴上，并且每个卷轴都必须通过它所包含的书来识别。
+                                </p>
+                            </div>
+                            <div class="col-md-12 col-sm-12 text-right" id="date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="floot d-none d-lg-block" id="floot">
         <ul>
             <li>
@@ -731,3 +1013,27 @@
 </body>
 
 </html>
+<script>
+    // 根据内存里的标识，判断用户是否有登录
+    login()
+
+    function login() {
+        var first = document.getElementById('login')
+        var second = document.getElementById('login2')
+        var three = document.getElementById('find')
+        var islog = localStorage.getItem('islogin')
+        if (islog == 1) {
+            document.getElementById('login').style.display = 'none'
+            document.getElementById('login2').innerHTML = localStorage.getItem('phones')
+        } else {
+            document.getElementById('dd').style.display = 'none'
+            document.getElementById('login').style.display = 'block'
+            document.getElementById('login2').style.display = 'none'
+        }
+    }
+
+    function loinged() {
+        localStorage.setItem('islogin', 2)
+        login()
+    }
+</script>

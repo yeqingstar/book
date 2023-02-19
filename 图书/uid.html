@@ -70,9 +70,9 @@
 
 <body>
     <div class="bodys">
-        <h1 id="zi">注册账号</h1>
+        <h1 id="zi">注册密码</h1>
         <p class="right">
-            <strong> 您的注册的手机号为:</strong><strong id="res" class="res">12321321131313</strong>
+            <strong> 您的注册的手机号为:</strong><strong id="res" class="res"></strong>
         </p>
         <div>
             <formon name="formname">
@@ -102,11 +102,10 @@
         if(pass===''){
             document.getElementById('pass').style.borderColor = "red"
         }else if(!res){
-            alert('请输正确的格式')
             document.getElementById('pass').style.borderColor = "red"
+            document.getElementById('pass').placeholder='请输正确的格式'
             document.getElementById('pass').value=''
         }else{
-        
             document.getElementById('pass').style.borderColor = "green"
         }
         if(password===''){
@@ -114,10 +113,11 @@
         }else if(pass!=password){
             document.getElementById('password').style.borderColor = "red"
             document.getElementById('password').value=''
-            alert('请输正确的密码')
+            document.getElementById('pass').placeholder='请输正确的密码'
         }else{
             document.getElementById('password').style.borderColor = "green"
-            // localStorage.setItem('password',pass)
+            localStorage.setItem('password',pass)
+            location.href='./登录.html'
             return true
         }
     }
@@ -126,45 +126,5 @@
             return true
         }
     }
-    get()
-    // 
-    // function sum() {
-    //     // 判段密码
-    //     var pass = document.getElementById('pass').value
-    //     var password = document.getElementById('password').value
-    //     var res = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$/
-    //     var reg = res.test(pass)
-    //     if (pass === "") {
-    //         document.getElementById('pass').style.borderColor = "red"
-    //         document.getElementById('gou').innerHTML = '×'
-    //         alert('密码不能为空')
-    //     } else if (!reg) {
-    //         document.getElementById('pass').style.borderColor = "red"
-    //         document.getElementById('gou').innerHTML = '×'
-    //         alert('请输入正确的格式')
-    //     } else {
-    //         document.getElementById('pass').style.borderColor = "green"
-    //         document.getElementById('gou').innerHTML = '√'
-    //     }
-    //     // 判断确认密码
-    //     if (password === "") {
-    //         document.getElementById('password').style.borderColor = "red"
-    //         document.getElementById('cha').innerHTML = '×'
-    //         alert('确认密码不能为空')
-    //     } else if (pass != password) {
-    //         document.getElementById('password').style.borderColor = "red"
-    //         document.getElementById('cha').innerHTML = '×'
-    //         alert('密码不一致')
-    //     } else {
-    //         document.getElementById('password').style.borderColor = "green"
-
-    //         location.href = "res4.html"
-    //         localStorage.setItem('passed', pass)
-
-
-    //     }
-
-
-
-    // }
+    // get()
 </script>
