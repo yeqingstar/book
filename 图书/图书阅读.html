@@ -10,6 +10,7 @@
     <script src="./main.js"></script>
 </head>
 <!-- 头部 -->
+
 <body>
     <div class="container-fluid top">
         <div class="row justify-content-between  dives">
@@ -343,7 +344,6 @@
                             </div>
                         </div>
                     </div>
-                    </style>
                     <div class="col-3 hot">
                         <ul id="hot">
                             <li>
@@ -946,9 +946,80 @@
                         </div>
                     </div>
                 </div>
+                <style>
+                    .leftact a {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    .leftact li{
+                        overflow: hidden;
+                    }
+                </style>
+                <script>
+                    $(function () {
+                        $('#xuan1 ul li img[id!=img1]').hide()
+                        $('#xuan1 ul li').mouseenter(function () {
+                            $('#xuan1 ul li img').hide()
+                            $('#xuan1 ul li').css('color', 'black')
+                            var cur = $(this).index()
+                            $('#xuan1 ul li img').eq(cur).show()
+                            $('#xuan1 ul li').eq(cur).show().css('color', 'red')
+                        })
+                    })
+                </script>
                 <div class="col-md-3 col-sm-2 tab-content leftact" id="xuan">
                     <div class="col-md-12" id="xuan1">
-
+                        <ul>
+                            <li id="img1"><a title="四大名著·权威定本（套装4册）"
+                                    href="https://yuedu.163.com/source/d5b6779ca43543a99a00532b1911573e_4"><i>01</i>
+                                    四大名著·权威定本（套装4册）</a>
+                                <img class="img-fluid" id="img1"
+                                    data-url="https://easyreadfs.nosdn.127.net/sQaJs2pC_CZImhmcWXydmw==/8796093024894756157"
+                                    src="https://easyreadfs.nosdn.127.net/sQaJs2pC_CZImhmcWXydmw==/8796093024894756157"
+                                    alt="四大名著·权威定本（套装4册）">
+                            </li>
+                            <li id="img2"><a title="四大名著·权威定本（套装4册）"
+                                    href="https://yuedu.163.com/source/d5b6779ca43543a99a00532b1911573e_4"><i>01</i>
+                                    四大名著·权威定本（套装4册）</a>
+                                <img class="img-fluid" id="img2"
+                                    data-url="https://easyreadfs.nosdn.127.net/sQaJs2pC_CZImhmcWXydmw==/8796093024894756157"
+                                    src="https://easyreadfs.nosdn.127.net/sQaJs2pC_CZImhmcWXydmw==/8796093024894756157"
+                                    alt="四大名著·权威定本（套装4册）">
+                            </li>
+                            <li id="img3"><a title="四大名著·权威定本（套装4册）"
+                                    href="https://yuedu.163.com/source/d5b6779ca43543a99a00532b1911573e_4"><i>01</i>
+                                    四大名著·权威定本（套装4册）</a>
+                                <img class="img-fluid" id="img3"
+                                    data-url="https://easyreadfs.nosdn.127.net/sQaJs2pC_CZImhmcWXydmw==/8796093024894756157"
+                                    src="https://easyreadfs.nosdn.127.net/sQaJs2pC_CZImhmcWXydmw==/8796093024894756157"
+                                    alt="四大名著·权威定本（套装4册）">
+                            </li>
+                            <li id="img4"><a title="四大名著·权威定本（套装4册）"
+                                    href="https://yuedu.163.com/source/d5b6779ca43543a99a00532b1911573e_4"><i>01</i>
+                                    四大名著·权威定本（套装4册）</a>
+                                <img class="img-fluid" id="img4"
+                                    data-url="https://easyreadfs.nosdn.127.net/sQaJs2pC_CZImhmcWXydmw==/8796093024894756157"
+                                    src="https://easyreadfs.nosdn.127.net/sQaJs2pC_CZImhmcWXydmw==/8796093024894756157"
+                                    alt="四大名著·权威定本（套装4册）">
+                            </li>
+                            <li id="img5"><a title="四大名著·权威定本（套装4册）"
+                                href="https://yuedu.163.com/source/d5b6779ca43543a99a00532b1911573e_4"><i>01</i>
+                                四大名著·权威定本（套装4册）</a>
+                            <img class="img-fluid" id="img4"
+                                data-url="https://easyreadfs.nosdn.127.net/sQaJs2pC_CZImhmcWXydmw==/8796093024894756157"
+                                src="https://easyreadfs.nosdn.127.net/sQaJs2pC_CZImhmcWXydmw==/8796093024894756157"
+                                alt="四大名著·权威定本（套装4册）">
+                        </li>
+                        <li id="img6"><a title="四大名著·权威定本（套装4册）"
+                            href="https://yuedu.163.com/source/d5b6779ca43543a99a00532b1911573e_4"><i>01</i>
+                            四大名著·权威定本（套装4册）</a>
+                        <img class="img-fluid" id="img4"
+                            data-url="https://easyreadfs.nosdn.127.net/sQaJs2pC_CZImhmcWXydmw==/8796093024894756157"
+                            src="https://easyreadfs.nosdn.127.net/sQaJs2pC_CZImhmcWXydmw==/8796093024894756157"
+                            alt="四大名著·权威定本（套装4册）">
+                    </li>
+                        </ul>
                     </div>
                     <div class="col-md-12" id="xuan2">
                         2
@@ -975,7 +1046,9 @@
                     <div class="col-md-6 col-sm-6 two-left">图书新闻</div>
                     <div class="col-md-6 col-sm-6 text-right"><span>更多</span></div>
                     <div class="col-md-6 col-sm-6 first-img">
-                        <img src="./kan.jpg" data-url="./kan.jpg" class="book-photo img-fluid">
+                        <img src="" alt="中国作家协会关于进一步加强文学工作者职业道德建设的意见"
+                            data-url="https://easyreadfs.nosdn.127.net/fe_cms/file.45ed81ebd399d505d54bdf5821c5c496.jpg"
+                            class="book-photo img-fluid">
                     </div>
                     <div class="col-md-6 col-sm-6 two-text">
                         <div class="row ">
